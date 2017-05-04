@@ -3,11 +3,10 @@ import mongoose from 'mongoose';
 import assert from 'assert';
 import config from './config';
 
-
+//removed id, MongoDB assigns ObjectID / _ID
 
 const  posts = [
-      {  id: 1 ,
-        title : 'IFAF is great for Field Archery in Ireland',
+      { title : 'IFAF is great for Field Archery in Ireland',
         link : 'http://ifaf.ie/wordpress/',
         forename : 'Marion',
         surname : 'Hood',
@@ -16,7 +15,6 @@ const  posts = [
         upvotes : 10
       },
      { 
-        id: 2,
         title : 'International Field Archery Assn: Q1 2017 newsletter is out!',
         link : 'http://www.ifaa-archery.org/index.php/ifaa-newsletters/2017',
         forename : 'William',
@@ -26,7 +24,6 @@ const  posts = [
         upvotes : 9
       },
       { 
-        id: 3,
         title : 'Membership in NFAS (UK) nearing 10k',
         link : 'http://www.nfas.net/home.asp',
         forename : 'Rob',
@@ -36,7 +33,6 @@ const  posts = [
         upvotes : 5
       },
       { 
-        id: 4,
         title : 'New site with loads of FREE online archery games. Great fun.',
         link : 'http://www.bgames.com/archery-games/',
         forename : 'Friar',
@@ -44,7 +40,16 @@ const  posts = [
         association : 'AAE',
         comments : [],
         upvotes : 2
-      }
+      },
+      { 
+        title : 'Latest post reviewData.js for Assignment2.',
+        link : 'https://github.com/ellingworthl/EWD_Assign2_WebAPI',
+        forename : 'Lynn',
+        surname : 'Ellingworth',
+        association : 'EWD',
+        comments : [],
+        upvotes : 2
+      }	  
       ] ;
 
 export const loadPosts = ()=>{

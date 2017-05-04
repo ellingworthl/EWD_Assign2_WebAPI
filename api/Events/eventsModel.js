@@ -2,9 +2,9 @@ const mongoose = require('mongoose'),
 Schema = mongoose.Schema;
 
 const EventsSchema = new Schema({
-  round: String,
-  venue: String,
-  date: Date,
+  round: { type: String, required: true }, 
+  venue: { type: String, required: true }, 
+  date: { type: Date, required: true }, 
   updated: { type: Date, default: Date.now }
 });
 

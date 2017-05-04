@@ -1,7 +1,7 @@
 import express from 'express';
 import _ from 'lodash';
 import mongoose from 'mongoose';
-import venues from './venuesModel';
+import Venue from './venuesModel';
 import config from './../../config';
 
 //Connect to database
@@ -10,8 +10,6 @@ import config from './../../config';
 const router = express.Router();
 
 //Return all VENUES
-//Post -> Venue
-//posts -> venues
 router.get('/', (req, res) => {
   Venue.find((err, venues) => {
     if(err) { return handleError(res, err); }
@@ -21,8 +19,6 @@ router.get('/', (req, res) => {
 
 
 //Add a VENUE
-// Post -> Venue
-// newPost -> newVenue
 router.post('/', (req, res) => {
      const newVenue = req.body;
     if (newVenue){
@@ -36,12 +32,10 @@ router.post('/', (req, res) => {
 });
 
 //Update a VENUE
-// event -> venue
-// updateEvent -> updateVenue
+// check text, should it be " return res.send({venue});"
 router.put('/:id', (req, res) => {
    let key = req.params.id;
    let updateVenue = req.body;
-
    if(updateVenue._id) { delete updateVenue._id; }
    Venue.findById(req.params.id,  (err, venue) => {
       if (err) { return handleError(res, err); }
@@ -55,7 +49,7 @@ router.put('/:id', (req, res) => {
 });
 
 //Delete a VENUE
-// event -> venue
+// check text, should it be " return res.send({venue});"
 router.delete('/:id', (req, res) => {
    let key = req.params.id;
    Venue.findById(key, (err, venue)=> {

@@ -31,6 +31,7 @@ router.post('/', (req, res) => {
 });
 
 //Update an event
+// check text, should it be " return res.send({event});"
 router.put('/:id', (req, res) => {
 	 let key = req.params.id;
 	 let updateEvent = req.body;
@@ -48,6 +49,7 @@ router.put('/:id', (req, res) => {
 });
 
 //Delete a event
+// check text, should it be " return res.send({event});"
 router.delete('/:id', (req, res) => {
 	 let key = req.params.id;
    Event.findById(key, (err, event)=> {
