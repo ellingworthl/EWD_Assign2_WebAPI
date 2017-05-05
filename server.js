@@ -2,14 +2,17 @@ import config from './config';
 import express from 'express';
 import eventsRouter from './api/Events';
 import reviewsRouter from './api/Reviews';
+import venuesRouter from './api/Venues';
+//import detailsRouter from './api/VenueDetail';
 import body_parser from 'body-parser';
 import mongoose from 'mongoose';
 import {loadEvents} from './eventData';
 import {loadPosts} from './reviewData';
+import {loadVenues} from './venueData';
 //import {Mockgoose} from 'mockgoose'; //Lab4
-//import {nodeEnv}  from './config'; //Lab4
+//import {nodeEnv}  from './config'; //Lab4 
 
-const server = express();
+export const server = express();
 
 
 mongoose.createConnection(config.mongoDb);
@@ -19,12 +22,13 @@ if(config.seedDb) {
 	loadPosts(); 
 }
 
+
 //configure body-parser
 server.use(body_parser.json());
 server.use(body_parser.urlencoded());
 server.use('/api/Events', eventsRouter);
 server.use('/api/Reviews', reviewsRouter);
-//server.use('/api/Venues', venuesRouter);
+server.use('/api/Venues', venuesRouter);
 //server.use('/api/venueDetails', detailsRouter);
 server.use(express.static('public'));
 

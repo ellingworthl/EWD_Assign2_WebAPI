@@ -30,6 +30,15 @@ router.post('/', (req, res) => {
       }
 });
 
+// get an event
+router.get('/:id', (req, res) => {
+  const id = req.params.id;
+  Event.findById(id, function (err, event) { 
+    if(err) { return handleError(res, err); }
+    return res.send({event});
+  });
+});
+
 //Update an event
 // check text, should it be " return res.send({event});"
 router.put('/:id', (req, res) => {

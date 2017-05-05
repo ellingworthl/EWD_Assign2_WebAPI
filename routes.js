@@ -7,6 +7,6 @@ mongoose.connect('mongodb://localhost:27017/FAF');
 require('./config/express').addMiddleware(app)
 require('./routes')(app)
 
-app.listen(4000, function() {
-  console.log('Express server listening.');
+app.listen(3000, function() {
+  console.log('Express server listening on 3000.');
 });

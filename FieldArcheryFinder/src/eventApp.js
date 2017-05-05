@@ -3,12 +3,6 @@ import React from 'react';
 import * as api from './eventsApi';
 import buttons from './content/eventButtons';
 
-//name = round // address = venue // phone_number = date // target_number = N/A column
-//need to sort to have date (ph) added under DATE and round (name) added under ROUND
-
-//Contact = Event
-//Contacts = Events
-
     var EventForm = React.createClass({
         getInitialState: function() {
            return { round: '', venue: '', date : ''};
@@ -203,7 +197,7 @@ import buttons from './content/eventButtons';
           }
       });
 
-//name = date // address = venue // phone_number = round // target_number = N/A column
+
       var EventApp = React.createClass({
 
     getInitialState: function() {

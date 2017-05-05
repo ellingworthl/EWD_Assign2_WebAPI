@@ -19,7 +19,6 @@ router.get('/', (req, res) => {
 
 //Add a post
 router.post('/', (req, res) => {
-
      const newPost = req.body;
     if (newPost){
            Post.create(newPost, (err, post) => {

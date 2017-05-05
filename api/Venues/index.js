@@ -32,7 +32,7 @@ router.post('/', (req, res) => {
 });
 
 //Update a VENUE
-// check text, should it be " return res.send({venue});"
+// confirmed should NOT be " return res.send({venue});"
 router.put('/:id', (req, res) => {
    let key = req.params.id;
    let updateVenue = req.body;
@@ -49,7 +49,7 @@ router.put('/:id', (req, res) => {
 });
 
 //Delete a VENUE
-// check text, should it be " return res.send({venue});"
+// confirmed should NOT be " return res.send({venue});"
 router.delete('/:id', (req, res) => {
    let key = req.params.id;
    Venue.findById(key, (err, venue)=> {

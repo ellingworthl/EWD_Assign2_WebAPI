@@ -29,7 +29,8 @@
     "react-scripts":  "0.2.1"
   },
   "scripts": {
-    "start": "nodemon --ignore FieldArcheryFinder/* --exec babel-node server.js"
+    "start": "nodemon --ignore FieldArcheryFinder/* --exec babel-node server.js",
+    "client": "babel-node start_client.js"
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"

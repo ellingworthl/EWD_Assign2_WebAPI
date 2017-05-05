@@ -1,20 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 //import '../src/css/bootstrap.css';
 
 //new import requirements for routing changes
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import Landing from './content/Landing';
-import Main from './content/Main';
-import About from './content/About';
-import ReviewApp from './ReviewApp';
-import CommentView from './commentPage'
-import RegisterApp from './registerApp';
-import VenueApp from './VenueApp';
-import VenueDetail from './venueDetail';
+import Landing from './FieldArcheryFinder/src/content/Landing';
+import Main from './FieldArcheryFinder/src/content/Main';
+import About from './FieldArcheryFinder/src/content/About';
+import ReviewApp from './FieldArcheryFinder/src/ReviewApp';
+import CommentView from './FieldArcheryFinder/src/commentPage'
+import RegisterApp from './FieldArcheryFinder/src/registerApp';
+import VenueApp from './FieldArcheryFinder/src/VenueApp';
+import VenueDetail from './FieldArcheryFinder/src/venueDetail';
 //EVENT import
-import EventApp from './eventApp';
+import EventApp from './FieldArcheryFinder/src/eventApp';
 
 // ReactDOM.render statement for routing
      ReactDOM.render(
@@ -32,6 +32,5 @@ import EventApp from './eventApp';
             </Route>
           </Router>
         ),
-          document.getElementById('FieldArcheryFinder')
+          document.getElementById('root')
       );
-//          document.getElementById('root')

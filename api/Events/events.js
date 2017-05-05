@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 var events = [
     {
         id: 1 ,
