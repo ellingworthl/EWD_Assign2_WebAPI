@@ -1,3 +1,4 @@
+//assign 2 format
 import _ from 'lodash';
 
 var venues = [

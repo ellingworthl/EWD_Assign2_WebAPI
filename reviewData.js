@@ -1,11 +1,11 @@
-import postModel from './api/Reviews/reviewsModel';
+import reviewModel from './api/Reviews/reviewsModel';
 import mongoose from 'mongoose';
 import assert from 'assert';
 import config from './config';
 
 //removed id, MongoDB assigns ObjectID / _ID
 
-const  posts = [
+const  reviews = [
       { title : 'IFAF is great for Field Archery in Ireland',
         link : 'http://ifaf.ie/wordpress/',
         forename : 'Marion',
@@ -52,14 +52,14 @@ const  posts = [
       }	  
       ] ;
 
-export const loadPosts = ()=>{
-postModel.find({}).remove(function() { 
-    postModel.collection.insert(posts, (err,docs)=>{
+export const loadReviews = ()=>{
+reviewModel.find({}).remove(function() { 
+    reviewModel.collection.insert(reviews, (err,docs)=>{
     if (err){
       console.log(`failed to Load Review Data`);
     }
     else{
-      console.info(`${posts.length} Reviews were successfully stored.`);
+      console.info(`${reviews.length} Reviews were successfully stored.`);
     }
   })
 });

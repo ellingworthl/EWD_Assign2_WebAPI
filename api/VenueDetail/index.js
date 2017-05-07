@@ -1,7 +1,7 @@
 import express from 'express';
 import _ from 'lodash';
 import mongoose from 'mongoose';
-import Club from './detailsModel';
+import Detail from './detailsModel';
 import config from './../../config';
 
 //Connect to database
@@ -9,69 +9,63 @@ import config from './../../config';
 
 const router = express.Router();
 
+//Return all venue details
 router.get('/', (req, res) => {
-  Club.find((err, clubs) => {
+  Detail.find((err, details) => {
     if(err) { return handleError(res, err); }
-    return res.send({clubs});
+    return res.send({details});
   });
 });
 
-//Add club detail
+//get venue detail
+router.get('/:id', (req, res) => {
+    const id = req.params.id;
+   Detail.findById(id, function (err, detail) { 
+        if(err) { return handleError(res, err); }
+        return res.send({detail});
+  } );
+});
+
+//Add venue detail
 router.post('/', (req, res) => {
-    const newClub = req.body;
-    if (newClub){
-           Club.create(newClub, (err, club) => {
+    const newDetail = req.body;
+    if (newDetail){
+           Detail.create(newDetail, (err, detail) => {
               if(err) { return handleError(res, err); }
-                 return res.status(201).send({club});
+                 return res.status(201).send({detail});
           });
       }else{
          return handleError(res, err);
       }
 });
 
-//get a club
-router.get('/:id', (req, res) => {
-    const id = req.params.id;
-   Club.findById(id, function (err, club) { 
-        if(err) { return handleError(res, err); }
-        return res.send({club});
-  } );
-            
-});
-
-//Update club detail
-// check text, should it be " return res.send({club});"
+//Update venue detail
 router.put('/:id', (req, res) => {
    const key = req.params.id;
-   const updateClub = req.body;
-   if(updateClub._id) { delete updateClub._id; }
-   Club.findById(req.params.id,  (err, club) => {
+   const updateDetail = req.body;
+   if(updateDetail._id) { delete updateDetail._id; }
+   Detail.findById(req.params.id,  (err, detail) => {
       if (err) { return handleError(res, err); }
-        if(!club) { return res.send(404); }
-            const updated = _.merge(club, req.body);
+        if(!detail) { return res.send(404); }
+            const updated = _.merge(detail, req.body);
             updated.save((err) => {
                   if (err) { return handleError(res, err); }
-                          return res.send(club);
+                          return res.send(detail);
             });
       });
 });
 
-//Delete club detail
-// check text, should it be " return res.send({club});"
+//Delete venue detail
 router.delete('/:id', (req, res) => {
    const key = req.params.id;
-   Club.findById(key, (err, club)=> {
+   Detail.findById(key, (err, detail)=> {
     if(err) { return res.status(400).send(err);}
-    if(!club) { return res.send(404); }
-    club.remove(err => {
+    if(!detail) { return res.send(404); }
+    detail.remove(err => {
       if(err) { return handleError(res, err); }
-      return res.send(club);
+      return res.send(detail);
     });
   });   
 });
-
-function handleError(res, err) {
-  return res.status(500).send(err);
-};
 
 export default router; 

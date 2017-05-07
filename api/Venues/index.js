@@ -17,6 +17,14 @@ router.get('/', (req, res) => {
   });
 });
 
+// get a VENUE
+router.get('/:id', (req, res) => {
+  const id = req.params.id;
+  Venue.findById(id, function (err, venue) { 
+    if(err) { return handleError(res, err); }
+    return res.send({venue});
+  });
+});
 
 //Add a VENUE
 router.post('/', (req, res) => {
@@ -61,9 +69,5 @@ router.delete('/:id', (req, res) => {
     });
   });   
 });
-
-function handleError(res, err) {
-  return res.status(500).send(err);
-};
 
 export default router;

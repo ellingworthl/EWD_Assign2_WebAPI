@@ -24,9 +24,8 @@
     "react-boostrap-carousel": "^2.0.4",
     "react-dom": "^15.2.1",
     "react-router": "^2.6.1",
-    "superagent": "^3.5.2",
-    "webpack": "^2.5.0",
-    "react-scripts":  "0.2.1"
+    "react-scripts": "0.2.1",
+    "superagent": "^3.5.2"
   },
   "scripts": {
     "start": "nodemon --ignore FieldArcheryFinder/* --exec babel-node server.js"

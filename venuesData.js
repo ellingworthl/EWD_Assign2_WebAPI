@@ -82,7 +82,7 @@ venueModel.find({}).remove(function() {
       console.log(`failed to Load Event Data`);
     }
     else{
-      console.info(`${venues.length} venues were successfully stored.`);
+      console.info(`${venues.length} VENUES were successfully stored.`);
     }
   })
 });

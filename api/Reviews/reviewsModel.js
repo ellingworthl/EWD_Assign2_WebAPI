@@ -7,7 +7,7 @@ const CommentSchema = new Schema({
   upvotes:{type: Number, default:0}
   });
 
- const PostSchema = new Schema({
+ const ReviewSchema = new Schema({
  	title: {type: String, required:true},
  	link:  {type: String, optional:true},
  	username:  {type: String, required:true},
@@ -15,4 +15,4 @@ const CommentSchema = new Schema({
   upvotes: { type: Number, min: 0, max: 100, default:0 }
  });
 
-export default mongoose.model('posts', PostSchema);
+export default mongoose.model('reviews', ReviewSchema);

@@ -1,7 +1,7 @@
 import express from 'express';
 import _ from 'lodash';
 import mongoose from 'mongoose';
-import Post from './reviewsModel';
+import Review from './reviewsModel';
 import config from './../../config';
 
 //Connect to database
@@ -9,86 +9,76 @@ import config from './../../config';
 
 const router = express.Router();
 
+//Return all Reviews
 router.get('/', (req, res) => {
-  Post.find((err, posts) => {
+  Review.find((err, reviews) => {
     if(err) { return handleError(res, err); }
-    return res.send({posts});
+    return res.send({reviews});
   });
 });
-// changed from: return res.send(posts);
+// fixed! changed from: return res.send(posts);
 
-//Add a post
+//Add a review
 router.post('/', (req, res) => {
-     const newPost = req.body;
-    if (newPost){
-           Post.create(newPost, (err, post) => {
+     const newReview = req.body;
+    if (newReview){
+           Review.create(newReview, (err, review) => {
               if(err) { return handleError(res, err); }
-                 return res.status(201).send({post});
+                 return res.status(201).send({review});
           });
       }else{
          return handleError(res, err);
-      }
-     
+      } 
 });
 
-//upvote a post
+//upvote a review
 router.post('/:id/upvotes', (req, res) => {
 	 const id = req.params.id;
-   Post.findById(id, function (err, post) { 
+   Review.findById(id, function (err, review) { 
         if(err) { return handleError(res, err); }
-        post.upvotes++;
-       post.save(err => {
+        review.upvotes++;
+       review.save(err => {
           if (err) {return handleError(res, err);}
-           return res.status(201).send({post});
+           return res.status(201).send({review});
         });
-  } );
-
-           
+  } );     
 });
 
-//get post
+//get a review
 router.get('/:id', (req, res) => {
     const id = req.params.id;
-   Post.findById(id, function (err, post) { 
+   Review.findById(id, function (err, review) { 
         if(err) { return handleError(res, err); }
-        return res.send({post});
-  } );
-            
+        return res.send({review});
+  } );         
 });
 
 //add comment
 router.post('/:id/comments', (req, res) => {
    const id = req.params.id;
    const comment = req.body;
-   Post.findById(id, (err, post)=>{ 
+   Review.findById(id, (err, review)=>{ 
         if(err) { return handleError(res, err); }
-        post.comments.push(comment);
-        post.save(err => {
+        review.comments.push(comment);
+        review.save(err => {
           if (err) {return handleError(res, err);}
-           return res.status(201).send({post});
+           return res.status(201).send({review});
         });
-  });
-           
-             
+  });        
 });
 
-router.post('/:postId/comments/:commentId/upvotes', (req, res) => {
+//upvote review comment
+router.post('/:reviewId/comments/:commentId/upvotes', (req, res) => {
    const commentId = req.params.commentId;
-   const postId = req.params.postId;
-   Post.findById( postId, (err, post)=>{
+   const reviewId = req.params.postId;
+   Review.findById( reviewId, (err, review)=>{
         if(err) { return handleError(res, err); }
-           post.comments.id(commentId).upvotes++;
-           post.save(err => {
+           review.comments.id(commentId).upvotes++;
+           review.save(err => {
            if (err) {return handleError(res, err);}
-                return res.status(201).send({post});
+                return res.status(201).send({review});
            });
   });
 });
-           
-            
-
-function handleError(res, err) {
-  return res.status(500).send(err);
-};
 
 export default router;
