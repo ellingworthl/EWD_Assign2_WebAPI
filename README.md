@@ -205,12 +205,12 @@ Assignment 1
 + https://www.lifewire.com/list-of-command-prompt-commands-4092302
 
 [image1]: ./ReadMe_Images/Assignment2_VenueFAFCode.png
-[image2]: ./Assignment2_VenueCode.png
-[image3]: ./Assignment2_Design.png
-[image4]: ./Assignment2_Model.png
-[image5]: ./Assignment2_FullScreen.png
-[image6]: ./Assignment2_Collapsed.png
-[image7]: ./Assign2_Robomongo_Events&Reviews.png
-[image8]: ./Assign2_Robomongo_Details&Venues.png
-[image9]: ./Assign2_Postman8080_GET
-[image10]: ./Assign2_LocalHost8080_APIs
+[image2]: ./ReadMe_Images/Assignment2_VenueCode.png
+[image3]: ./ReadMe_Images/Assignment2_Design.png
+[image4]: ./ReadMe_Images/Assignment2_Model.png
+[image5]: ./ReadMe_Images/Assignment2_FullScreen.png
+[image6]: ./ReadMe_Images/Assignment2_Collapsed.png
+[image7]: ./ReadMe_Images/Assign2_Robomongo_Events&Reviews.png
+[image8]: ./ReadMe_Images/Assign2_Robomongo_Details&Venues.png
+[image9]: ./ReadMe_Images/Assign2_Postman8080_GET
+[image10]: ./ReadMe_Images/Assign2_LocalHost8080_APIs
