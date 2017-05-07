@@ -209,8 +209,8 @@ Assignment 1
 [image3]: ./ReadMe_Images/Assignment2_Design.png
 [image4]: ./ReadMe_Images/Assignment2_Model.png
 [image5]: ./ReadMe_Images/Assignment2_FullScreen.png
-[image6]: ./ReadMe_Images/Assignment2_Collapsed.png
+[image6]: ./ReadMe_Images/Assignment2_CollapsedScreen.png
 [image7]: ./ReadMe_Images/Assign2_Robomongo_Events&Reviews.png
 [image8]: ./ReadMe_Images/Assign2_Robomongo_Details&Venues.png
-[image9]: ./ReadMe_Images/Assign2_Postman8080_GET
-[image10]: ./ReadMe_Images/Assign2_LocalHost8080_APIs
+[image9]: ./ReadMe_Images/Assign2_Postman8080_GET.png
+[image10]: ./ReadMe_Images/Assign2_LocalHost8080_APIs.png
