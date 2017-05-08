@@ -3,9 +3,8 @@ import _ from 'lodash';
 import './VenueApp.css';
 //new import to support routing
 import { Link } from 'react-router';
-import Venues from './venueData'; 
-//import * as api from './venueApi';
-
+//import Venues from './venueData'; 
+import * as api from './venueApi';
 
 var SelectBox = React.createClass({
     handleChange : function(e, type,value) {

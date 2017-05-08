@@ -1,4 +1,3 @@
-//don't edit - Assign 1 content!!
 var AllVenues = 
 [ 
 {

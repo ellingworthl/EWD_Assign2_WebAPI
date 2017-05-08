@@ -11,66 +11,81 @@ Having these facilities on one site would be terribly handy and would have a bro
 
 
 ## List of user features (excluding user registration and authentication)
- Assignment 2 - extension of SPA App from Assignment 1
- + Feature to list all archery venues which can be filtered (.json file) which can be sorted &/or filtered
- + Feature to drill-down to an individual venue to access specific details about it e.g. range-type, images and blub representing the club, directions and on-site facilities (also stored on json file)
- + Feature to create new and update or delete existing Events for competitions (.json file) .
+ Assignment 2 - extension of ReactJS SPA App from Assignment 1
+ + Venues
+ Persistent data from single file (JSON)
+ Feature to list all archery venues which can be filtered (.json file) which can be sorted &/or filtered
+ 
+ + Venue Details
+ Persistent data from individual files (JSON)
+ Feature to drill-down to an individual venue to access specific details about it e.g. range-type, images and blub representing the club, directions and on-site facilities (also stored on json file)
+ 
+ + Events
+ Persistent data from API (JSON file) listed on Events screen
+ Ability to add an event using Round, Venue and Date fields (data saved to local storage)
+ Ability to edit an event (data saved to local storage)
+ Ability to delete an event (data removed from local storage) 
+ Ability to cancel changes applied to restore/revert to original event data (no update saved to local storage)
  
  Assignment 1 - SPA ReactJS App (Exisiting Features)
- + Feature to review an event through comment title and link (URL) data entry
- + Feature to comment on existing reviews posted through comment feedback and reviewers name data entry
- + Feature to upvote both the main reviews and the comments associated with those reviews. 
- + Feature to contact site administrator to request venue be added (embedded email link)
+ + Reviews
+ Persistent data from API (JSON file) listed on Review screen
+ Ability to add a review using comment title and link (URL) data entry (saved to local storage)
+ Ability to comment on existing reviews posted through Comment link, which opened a child page where feedback comment and reviewers name can be entered (saved to local storage)
+ Ability to upvote both the main reviews and feedback comments linked to the reviews. 
+ 
+ + About
+ Ability to trigger an email to the site administrator to request venue be added (embedded email link)
  
 ## Installation requirements.
- Assignment 2 - Config installs supporting Web API:
- DevDependencies:
- + babel-cli
- + babel-preset-es2015
- + babel-preset-node6
- + babel-preset-stage-2
- + react-scripts
- + nodemon
-
- Dependencies:
- + body-parser
- + bootstrap
- + css-loader
- + express
- + lodash
- + mongodb
- + mongoose
- + react
- + react-boostrap-carousel
- + react-dom
- + react-router
- + superagent
- + axios
+ Assignment 2 - Web API project folder "EWD_Assign2_WebAPI"
+ + babel-cli@6.24.1
+ + babel-preset-es2015@6.24.1
+ + babel-preset-node6@11.0.0
+ + babel-preset-stage-2@6.24.1
+ + body-parser@1.17.1
+ + bootstrap@3.3.7
+ + css-loader@0.27.3
+ + express@4.15.2
+ + lodash@2.4.2
+ + mongodb@2.2.26
+ + mongoose@4.9.7
+ + nodemon@1.11.0
+ + react@15.4.2
+ + react-boostrap-carousel@2.0.4
+ + react-dom@15.4.2
+ + react-router@2.8.1
+ + react-scripts@0.2.1
+ + superagent@3.5.2
  
- Assignment 1 - Client / SPA App
- + ReactJS
- + Bootstrap 3
- + create-react-app tool
- + react-router
- + css loader
- + superagent 
- + lodash
- + react-boostrap-carousel
- + react-dom
- + react-router
+ Assignment 1 - Client / SPA App folder "FieldArcheryFinder"
+ + axios@0.16.1
+ + bootstrap@3.3.7
+ + css-loader@0.27.3
+ + lodash@2.4.2
+ + react@15.4.2
+ + react-boostrap-carousel@2.0.4
+ + react-dom@15.4.2
+ + react-router@2.8.1
+ + react-scripts@0.2.1
+ + superagent@3.5.2
 
 
  Assignment 2
- A user must install MongoDB
- After installing, create a data and db file in the same directory as MongoDb installed (e.g. C:\data\db)
- To launch MongoDb, go to the bin folder and double-click on the "mongod" application (e.g. C:\Program Files\MongoDB\Server\3.4\bin)
+ + A user must install MongoDB
+ + After installing, create a data and db file in the same directory as MongoDb installed (e.g. C:\data\db)
+ + To launch MongoDb, go to the bin folder and double-click on the "mongod" application (e.g. C:\Program Files\MongoDB\Server\3.4\bin)
  
- To view the application, clone it from the repository (https://github.com/ellingworthl/EWD_Assign2_WebAPI), a viewer must 
- + Open a command window in the repositiory folder (hold Shift Key & right-click the mouse)
+ To view the application, clone it from the repository (https://github.com/ellingworthl/EWD_Assign2_WebAPI)
+ 1) Start Express (port 8080)
+ + Open a command window in the repositiory folder "EWD_Assign2_WebAPI" (hold Shift Key & right-click the mouse)
  + type npm install
- + check Package.json file and install any missing dependancies (dev &/or other)
  + type npm start 
- + enter http://localhost:8080/ into the browser
+
+ 2) Start Client (port 3000)
+ + Open a command window in the repositiory folder "FieldArcheryFinder"
+ + type npm install
+ + type npm start 
 
 ## Web API integration with ReactJS SPA
  I am unable to get my application to launch when I start the express server.
@@ -112,12 +127,12 @@ A diagram showing the app's hierarchical component design (see example below).
 This diagramatic image also shows the app's design and its components
 ![][image4]
 
-The images show the Venue page (V.js) page in full and collapsed view format. Notice how the Navigation bar resizes itself and changes its format based on sceen-size.
++ The images show the Venues listing page (VenueApp.js) page in full and collapsed view format. Notice how the Navigation bar resizes itself and changes its format based on sceen-size.
++ Full-screen, the content has state determined by the Name search
++ Collapsed screen, content has state determined by sort dropdown menu selection of 'County' (versus 'Name').
++ Full-screen page contains react components VenueApp, NavBar, Footer. 
++ Both pages have formatting from bootstrap Carousel and half-slider CSS styling as well as additional VenueApp CSS styling.
 
-On the full-screen page there is the VenueApp, NavBar, Footer react components are all visible, as is the bootstrap Carousel and half-slider CSS styling.
-
-On the full-screen, the content has state determined by the Name search and in the collapsed view data has state determined by sort dropdown menu 'County' (versus 'Name').
- 
 ![][image5]
 
 ![][image6]
@@ -165,10 +180,11 @@ To help with building the FAF app I have used:
 + https://www.youtube.com/watch?v=MhkGQAoc7bc&list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b
 + https://github.com/learncodeacademy/react-js-tutorials
 + https://css-tricks.com/css-modules-part-3-react/
-+ http://stackoverflow.com/questions/41515468/custom-stylesheet-in-react-app (install css loader (npm install --save css-loader )
++ http://stackoverflow.com/questions/41515468/custom-stylesheet-in-react-app 
 + http://magic.reactjs.net/htmltojsx.htm
 + http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-navbar.php
 + http://jsonlint.com/
++ http://www.favicon.cc/
 + https://startbootstrap.com/template-overviews/half-slider/
 + http://bootsnipp.com/snippets/featured/clean-modal-login-form
 + https://github.com/tylermcginnis/react-router-firebase-auth
@@ -203,6 +219,12 @@ Assignment 1
 + https://www.youtube.com/watch?annotation_id=annotation_3748334139&feature=iv&src_vid=9kJVYpOqcVU&v=pU9Q6oiQNd0
 + https://www.youtube.com/watch?v=Ybn6Q92m4xg
 + https://www.lifewire.com/list-of-command-prompt-commands-4092302
+
+## Other tools/applications
+GitHub shell - easier management of GitHub versioning
+Sublime Text Editor (preferred over GIT Bash) - text editor tool
+Notepad++ - text editor tool
+Robomongo
 
 [image1]: ./ReadMe_Images/Assignment2_VenueFAFCode.png
 [image2]: ./ReadMe_Images/Assignment2_VenueCode.png
