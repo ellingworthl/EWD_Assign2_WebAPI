@@ -87,10 +87,14 @@ Having these facilities on one site would be terribly handy and would have a bro
  + type npm install
  + type npm start 
 
+ 
 ## Web API integration with ReactJS SPA
- I am unable to get my application to launch when I start the express server.
- I have 4 collections, from the data files seeded to the FAF db on MongoDB. I can also see the database objects in my browser if I search any of the API paths (e.g. localhost:8080/api/venues) but http://localhost:8080/ returns "Cannot GET /"
+ I am unable to get my client application on localhost:3000 to retrieve the API data for Events, Venue and Venue Details and Reviews which has been successfully seeded to the FAF database in MongoDB.
 
+ I can see the objects within each collection in my browser if I search any of the API paths (e.g. localhost:8080/api/events), however, none of the db objects are returned in the App for Events or Reviews. 
+![][image11]
+ 
+ 
  Using Robomongo, a visual tool designed to help manage Database MongoDB, the images below show the four API's loaded into MongoDB as Collections (Details, Events, Reviews & Venues) in the FAF database
 ![][image7]
 
@@ -224,7 +228,7 @@ Assignment 1
 GitHub shell - easier management of GitHub versioning
 Sublime Text Editor (preferred over GIT Bash) - text editor tool
 Notepad++ - text editor tool
-Robomongo
+Robomongo - a MongoDB management tool with GUI interaction & Command line shell capabilities
 
 [image1]: ./ReadMe_Images/Assignment2_VenueFAFCode.png
 [image2]: ./ReadMe_Images/Assignment2_VenueCode.png
@@ -236,3 +240,4 @@ Robomongo
 [image8]: ./ReadMe_Images/Assign2_Robomongo_Details&Venues.png
 [image9]: ./ReadMe_Images/Assign2_Postman8080_GET.png
 [image10]: ./ReadMe_Images/Assign2_LocalHost8080_APIs.png
+[image11]: ./ReadMe_Images/Assign2_Events-Reviews_3000.png
