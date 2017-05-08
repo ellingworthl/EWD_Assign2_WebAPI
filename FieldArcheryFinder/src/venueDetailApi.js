@@ -44,7 +44,7 @@ export const updateDetail = (id,name,description,type,link,association,parking,t
     description: description, 
     type: type,
     link: link,
-    association: Association,
+    association: association,
     parking: parking,
     toilet: toilet, 
     refreshments: refreshments,
