@@ -40,14 +40,19 @@ Having these facilities on one site would be terribly handy and would have a bro
 ## Installation requirements.
  Assignment 2 - Web API project folder "EWD_Assign2_WebAPI"
  + babel-cli@6.24.1
+ + babel-core@6.24.1 
  + babel-preset-es2015@6.24.1
  + babel-preset-node6@11.0.0
  + babel-preset-stage-2@6.24.1
  + body-parser@1.17.1
  + bootstrap@3.3.7
+ + cross-env@4.0.0
  + css-loader@0.27.3
  + express@4.15.2
  + lodash@2.4.2
+ + mocha@3.3.0
+ + mochawesome@2.1.0
+ + mockgoose@7.3.1
  + mongodb@2.2.26
  + mongoose@4.9.7
  + nodemon@1.11.0
@@ -56,7 +61,10 @@ Having these facilities on one site would be terribly handy and would have a bro
  + react-dom@15.4.2
  + react-router@2.8.1
  + react-scripts@0.2.1
+ + save-dev@2.0.0
+ + should@11.2.1
  + superagent@3.5.2
+ + supertest@3.0.0
  
  Assignment 1 - Client / SPA App folder "FieldArcheryFinder"
  + axios@0.16.1
@@ -89,18 +97,21 @@ Having these facilities on one site would be terribly handy and would have a bro
 
  
 ## Web API integration with ReactJS SPA
- I am unable to get my client application on localhost:3000 to retrieve the API data for Events, Venue and Venue Details and Reviews which has been successfully seeded to the FAF database in MongoDB.
+ I am unable to get my client application on localhost:3000 to retrieve the API data which has been successfully seeded to the FAF database in MongoDB.
 
- I can see the objects within each collection in my browser if I search any of the API paths (e.g. localhost:8080/api/events), however, none of the db objects are returned in the App for Events or Reviews. 
+ I can see the objects within each collection in my browser if I search any of the API paths (e.g. localhost:8080/api/events), however, none of the db objects are returned in the App (e.g. localhost:3000/events) 
 ![][image11]
- 
  
  Using Robomongo, a visual tool designed to help manage Database MongoDB, the images below show the four API's loaded into MongoDB as Collections (Details, Events, Reviews & Venues) in the FAF database
 ![][image7]
 
 ![][image8] 
- 
- 
+  
+ Using Chrome, the same localhost paths validated in Postman under "GET" return the objects in each of the collections in the FAF db on MongoDB:
+![][image10]  
+
+
+## Testing 
  Using Postman, the data from the API's can be seen being returned via the Express server on port 8080
  + localhost:8080/api/details
  + localhost:8080/api/events
@@ -108,9 +119,14 @@ Having these facilities on one site would be terribly handy and would have a bro
  + localhost:8080/api/venues
 ![][image9]
  
-  
- Using Chrome, the same localhost paths checked in Postman return the objects in each of the collections in the FAF db on MongoDB:
-![][image10] 
+ Using Mocha, API testing for GET, ADD & DELETE performed. Screenshots of the test results in the console for Events, Reviews, Venues & [venue] Details shown below:
+![][image12]
+
+![][image13]
+
+Using Mochawsome, test reports can be viewed. The reports show each unit test run against the Events, Reviews, Venues & Details API's for GET, ADD, ADD & DELETE and DELETE and their status (Pass or Fail):
+![][image14]
+
  
 ## Data Model Design.
 Exension of SPA for Assignment 2 - VenueApp code (SPA):
@@ -121,7 +137,6 @@ Assignment 2, illustration of .js files supporting WebAPI integration & MongoDB 
  
 
 ## App Component Design.
-
 A diagram showing the app's hierarchical component design (see example below). 
 
 ![][image3]
@@ -146,8 +161,8 @@ This diagramatic image also shows the app's design and its components
  List each route supported and state the associated view . . . . . 
  
  Assignment 2 - extension of SPA App from Assignment 1
-+ /venues - dynamic content added. Lists venues. App contains logo and summary information for each venue. List sortable using either Name or County and searchable by Venue name. CSS modified to expand container & resize image.
-+ /venues/:venueid - shows detailed information about each venue (API). HeaderSection component created. Detail reorder in terms of importance, listing specific detail about the club. Venue Display reordered (Header, Information, then images). CSS modified to increase dimensions of Information section.
++ /venues - dynamic content added. Lists venues, which can be sorted by Name or County or searched for by Name. Listing contains club logo, phone number, town and county information. CSS modified to expand container & resize image.
++ /venues/:venueid - shows detailed information about each venue. HeaderSection component created. Detail reorder in terms of importance, listing specific detail about the club. Venue Display reordered (Header, Information, then images). CSS modified to increase dimensions of Information section.
 + /events - new, dynamic react component created and routing updated to support eventsApp (API). Bootstap CCS applied to change table styling.
 + /register - firebase authorisation not completed, log-in container and bootstrap CSS only applied
 
@@ -225,10 +240,10 @@ Assignment 1
 + https://www.lifewire.com/list-of-command-prompt-commands-4092302
 
 ## Other tools/applications
-GitHub shell - easier management of GitHub versioning
-Sublime Text Editor (preferred over GIT Bash) - text editor tool
-Notepad++ - text editor tool
-Robomongo - a MongoDB management tool with GUI interaction & Command line shell capabilities
++ GitHub shell - facilitates management of GitHub versioning
++ Sublime Text Editor (preferred over GitBash) - text editor tool
++ Notepad++ - text editor tool (used in conjunction with Sublime)
++ Robomongo - a MongoDB management tool with GUI interaction & Command line shell capabilities
 
 [image1]: ./ReadMe_Images/Assignment2_VenueFAFCode.png
 [image2]: ./ReadMe_Images/Assignment2_VenueCode.png
@@ -241,3 +256,6 @@ Robomongo - a MongoDB management tool with GUI interaction & Command line shell 
 [image9]: ./ReadMe_Images/Assign2_Postman8080_GET.png
 [image10]: ./ReadMe_Images/Assign2_LocalHost8080_APIs.png
 [image11]: ./ReadMe_Images/Assign2_Events-Reviews_3000.png
+[image12]: ./ReadMe_Images/Assign2_Mocha_Events-Reviews.png
+[image13]: ./ReadMe_Images/Assign2_Mocha_Venue-Details.png
+[image14]: ./ReadMe_Images/Assign2_MochawsomeReport.png

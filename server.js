@@ -10,11 +10,29 @@ import {loadEvents} from './eventData';
 import {loadReviews} from './reviewData';
 import {loadVenues} from './venuesData';
 import {loadDetails} from './detailsData';
-//import {Mockgoose} from 'mockgoose'; //Lab4
-//import {nodeEnv}  from './config'; //Lab4 
+//Lab4 - Testing
+import {Mockgoose} from 'mockgoose'; 
+import {nodeEnv}  from './config';
 
 export const server = express();
 
+//Connect to database (testing)
+//use mockgoose for testing	
+//use real deal (mongoose) for everything else
+if (nodeEnv == 'test'){
+	var mockgoose = new Mockgoose(mongoose); 
+	mockgoose.prepareStorage().then(function() {
+  	mongoose.createConnection(config.mongoDb);
+	});
+} 
+else
+{
+	mongoose.createConnection(config.mongoDb);
+}
+mongoose.connection.on('error', function(err) {
+    console.error('MongoDB connection error: '+ err);
+    process.exit(-1);
+});
 
 mongoose.createConnection(config.mongoDb);
 // Populate DB with sample data

@@ -2,18 +2,18 @@
 import axios from 'axios';
 
 export const getAll = () => {
-  //console.log("venueApi.js getAllVenues")
+  console.log("venueApi.js getAllVenues")
    return axios('/api/Venues')
               .then(resp => resp.data);
 };
 
 export const getVenue = venueId => {
-  return axios.get('/api/Venues/${venueId}')
+  return axios('/api/Venues')
               .then(resp => resp.data);
 };
 
 export const addVenue = (newID,newImageUrl,newName,newPhoneno,newCounty,newTown) => {
-  return axios.put('/api/Venues', { 
+  return axios.put('/api/Venues', {
     id: newID,
     imageUrl: newImageUrl,
     name: newName,
