@@ -80,21 +80,20 @@ Having these facilities on one site would be terribly handy and would have a bro
 
 
  TO LAUNCH APPLICATION FOR ASSIGNMENT 2
- + A user must install MongoDB
+ + A user must install MongoDB (e.g. e.g. C:\Program Files\MongoDB)
  + After installing, create a data and db file in the same directory as MongoDb installed (e.g. C:\data\db)
- + To launch MongoDb, go to the bin folder and double-click on the "mongod" application (e.g. C:\Program Files\MongoDB\Server\3.4\bin)
  
  To view the application, clone it from the repository (https://github.com/ellingworthl/EWD_Assign2_WebAPI)
- 1) Start Node
- + Open Explorer window in nodejs folder (e.g. C:\Program Files\nodejs)
- + double-click on node.exe to launch
+ 1) Start Node server (port 27017)
+ + Open Explorer window in MongoDB's bin folder (e.g. C:\Program Files\MongoDB\Server\3.4\bin)
+ + double-click on mongod.exe to launch
  
- 2) Start Express (port 8080)
+ 2) Start Express server (port 8080)
  + Open a command window in the repositiory folder "EWD_Assign2_WebAPI" (hold Shift Key & right-click the mouse)
  + type npm install
  + type npm start 
 
- 2) Start Client (port 3000)
+ 2) Start Client server (port 3000)
  + Open a command window in the repositiory folder "FieldArcheryFinder"
  + type npm install
  + type npm start 
