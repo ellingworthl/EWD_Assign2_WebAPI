@@ -79,7 +79,7 @@ Having these facilities on one site would be terribly handy and would have a bro
  + superagent@3.5.2
 
 
- Assignment 2
+ TO LAUNCH APPLICATION FOR ASSIGNMENT 2
  + A user must install MongoDB
  + After installing, create a data and db file in the same directory as MongoDb installed (e.g. C:\data\db)
  + To launch MongoDb, go to the bin folder and double-click on the "mongod" application (e.g. C:\Program Files\MongoDB\Server\3.4\bin)
@@ -97,6 +97,25 @@ Having these facilities on one site would be terribly handy and would have a bro
 
  
 ## Web API integration with ReactJS SPA
+ To support AIP creation and integration, and subsequent API validation using Mockgoose and Mocha, several files had to be created &/or updated: 
+ EWD_Assign2_WebAPI
+ + eventData.js (new)
+ + server.js (updated)
+ 
+ EWD_Assign2_WebAPI\api\Events
+ + events.js (new)
+ + eventsModel.js (new)
+ + index.js (new)
+ 
+ EWD_Assign2_WebAPI\FieldArcheryFinder\src
+ + eventApp.js (updated)
+ + eventsApi.js (new)
+ 
+ Images show Events as an example:
+ ![][image15]
+ 
+ ![][image16]
+
  I am unable to get my client application on localhost:3000 to retrieve the API data which has been successfully seeded to the FAF database in MongoDB.
 
  I can see the objects within each collection in my browser if I search any of the API paths (e.g. localhost:8080/api/events), however, none of the db objects are returned in the App (e.g. localhost:3000/events) 
@@ -184,7 +203,7 @@ For Assignment 2 I have used:
 + https://www.getpostman.com
 + https://cloud.mongodb.com/user#/login?nds=true
 + https://docs.mongodb.com/manual/reference/mongo-shell/
-+ https://www.mongodb.com/cloud/atlas/lp/try-2?jmp=search&utm_source=google&utm_campaign=EMEA-UK-IE-MongoDB-to-Atlas-Brand-Beta&utm_keyword=%2Bmongodb&utm_device=c&utm_network=g&utm_medium=cpc&utm_creative=184482994740&utm_matchtype=b&_bt=184482994740&_bk=%2Bmongodb&_bm=b&_bn=g&gclid=CInmkv_rvdMCFWu-7QodcKINKw
++ https://www.mongodb.com/
 + https://www.npmjs.com/package/mongodb
 + https://mongodb.github.io/node-mongodb-native/
 
@@ -241,7 +260,7 @@ Assignment 1
 
 ## Other tools/applications
 + GitHub shell - facilitates management of GitHub versioning
-+ Sublime Text Editor (preferred over GitBash) - text editor tool
++ Sublime Text Editor - text editor tool
 + Notepad++ - text editor tool (used in conjunction with Sublime)
 + Robomongo - a MongoDB management tool with GUI interaction & Command line shell capabilities
 
@@ -259,3 +278,5 @@ Assignment 1
 [image12]: ./ReadMe_Images/Assign2_Mocha_Events-Reviews.png
 [image13]: ./ReadMe_Images/Assign2_Mocha_Venue-Details.png
 [image14]: ./ReadMe_Images/Assign2_MochawsomeReport.png
+[image15]: ./ReadMe_Images/Assigment2_Events_Code.png
+[image16]: ./ReadMe_Images/Assigment2_Events_Code2.png
