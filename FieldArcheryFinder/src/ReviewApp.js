@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import * as api from './eventsApi';
+import * as api from './reviewsApi';
 //import api from './data/stubAPI';
 
 //new import to support routing
