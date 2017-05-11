@@ -98,6 +98,24 @@ var NewsList = React.createClass({
 }) ;  
 
 var ReviewApp = React.createClass({ 
+
+    getInitialState: function() {
+    return {
+      posts: [{}],
+    };
+  },
+
+
+  componentDidMount: function(){
+    api.getAll().then(resp => {
+      this.setState({
+        posts: resp.posts
+      });
+      console.log("didMount: " + this.state.posts)
+    }).catch(console.error);
+  },
+
+
     componentWillUnmount: function() {
        api.persist() ;
     },
@@ -111,10 +129,11 @@ var ReviewApp = React.createClass({
       this.setState({});
     },    
     render: function(){
-        var posts = _.sortBy(api.getAll(), function(post) {
-                return - post.upvotes;
-             }
-          );
+    //    var posts = _.sortBy(api.getAll(), function(post) {
+    //                   return - post.upvotes;
+    //         }
+    //      );
+      var posts = this.state.posts;
         return (
            <div >		   
       <h1>Reviews and feedback</h1>

@@ -10,15 +10,13 @@ import {loadEvents} from './eventData';
 import {loadReviews} from './reviewData';
 import {loadVenues} from './venuesData';
 import {loadDetails} from './detailsData';
-//Lab4 - Testing
-import {Mockgoose} from 'mockgoose'; 
+import {Mockgoose} from 'mockgoose';
 import {nodeEnv}  from './config';
 
 export const server = express();
 
-//Connect to database (testing)
-//use mockgoose for testing	
-//use real deal (mongoose) for everything else
+
+// Connect to database
 if (nodeEnv == 'test'){
 	var mockgoose = new Mockgoose(mongoose); 
 	mockgoose.prepareStorage().then(function() {
@@ -29,25 +27,24 @@ else
 {
 	mongoose.createConnection(config.mongoDb);
 }
+
 mongoose.connection.on('error', function(err) {
     console.error('MongoDB connection error: '+ err);
     process.exit(-1);
 });
 
-mongoose.createConnection(config.mongoDb);
-// Populate DB with sample data
-if(config.seedDb) { 
+//pupulate DB with sample data
+if (config.seedDb) {
 	loadEvents();
 	loadReviews(); 
 	loadVenues();
-	loadDetails(); 	
+	loadDetails(); 
 }
-
 
 //configure body-parser
 server.use(body_parser.json());
-server.use(body_parser.urlencoded());
-server.use('/api/Events', eventsRouter);
+server.use(body_parser.urlencoded({}));
+server.use('/api/Events', eventsRouter); 
 server.use('/api/Reviews', reviewsRouter);
 server.use('/api/Venues', venuesRouter);
 server.use('/api/VenueDetails', detailsRouter);

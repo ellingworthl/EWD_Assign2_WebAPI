@@ -75,8 +75,9 @@ import buttons from './content/eventButtons';
           handleEdit : function() {
               this.setState({ status : 'edit'} )
           }, 
-          handleConfirm : function(e) { 
-              this.props.deleteHandler(this.props.event.date) ;//Handler uses the key / k
+          handleConfirm : function(e) {              
+//***********            this.props.deleteHandler(this.props.event.date) ;//Handler uses the key / k
+            this.props.deleteHandler(this.props.event._id);   // _id provided from Mongo
           },    
           handleCancel : function() {
              this.setState({ status : '', 
@@ -92,11 +93,12 @@ import buttons from './content/eventButtons';
               if (!round || !venue || !date) {
                 return;
               }
-                            this.setState({status : ''} )
-              this.props.updateHandler(this.props.event.date,
-                       round,venue,date);// this.props.event.date part of the key
-
-            }, 
+              this.setState({status : ''} )
+              this.props.updateHandler(
+                this.props.event._id,      // Key   from mongo
+                round, venue, date
+              );  // this.props.event.date part of the key
+          }, 
           handleRoundChange: function(e) {
               this.setState({round: e.target.value});
             },
@@ -198,7 +200,7 @@ import buttons from './content/eventButtons';
       });
 
 
-      var EventApp = React.createClass({
+var EventApp = React.createClass({
 
     getInitialState: function() {
       return {
@@ -207,7 +209,9 @@ import buttons from './content/eventButtons';
     },
 
     componentDidMount: function(){
+      console.log("eventApp  didMount")
       api.getAll().then(resp => {
+        console.log("setState: " + resp.events)
           this.setState({
                 events: resp.events
          });
@@ -215,19 +219,34 @@ import buttons from './content/eventButtons';
       }).catch(console.error);
     },
 
-          deleteEvent : function(k) {
-             api.delete(k);
-             this.setState( {} ) ;
-          },
-          addEvent : function(r,v,d) {
-             api.add(r,v,d) ;
-             this.setState({});
-          },
-          updateEvent : function(key,r,v,d) {
-              if (api.update(key,r,v,d) )  { 
-                  this.setState({});  
-              }             
-          },  
+    deleteEvent : function(k) {
+      console.log("FAF delete event: " + k);  //date is the key
+       //api.delete(k);   //*********************************************************** method in api is deleteEvent
+       api.deleteEvent(k);
+       this.setState( {} ) ;
+    },
+
+    addEvent : function(r,v,d) {
+      api.addEvent(r,v,d)    //********************* method name
+      .then(resp => {         // handle promise
+        const newEvent = {"id": resp.id, "round": resp.round, "venue": resp.venue, "date": resp.date};
+        this.setState({evetns: this .state.events.conat([newEvent])});
+      })
+    },
+
+    updateEvent : function(key,r,v,d) {
+      console.log("FAF updateEvent " + key);
+      console.log("round: " + r);
+      console.log("venue: " + v);
+      console.log("date: " + d);
+      //if (api.update(key,r,v,d) )  {   //*************************** method in api is updateEvent
+      api.updateEvent(key,r,v,d)
+        .then(resp => {
+          const newEvent = {"id": resp.id, "round": resp.round, "venue": resp.venue, "date": resp.date};
+          this.setState({evetns: this .state.events.concat([newEvent])});
+        })             
+    },  
+
           render: function(){
               var events = this.state.events ;
               console.log(events); 

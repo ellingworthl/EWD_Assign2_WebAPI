@@ -9,7 +9,7 @@ export const upvote = reviewId => {
 //get all reviews
 export const getAll = () => {
    //console.log("reviewsApi.js getAllReviews")
-   return axios('/api/reviews')
+   return axios('/api/Reviews')
               .then(resp => resp.data);
 };
 

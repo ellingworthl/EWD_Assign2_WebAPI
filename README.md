@@ -103,6 +103,9 @@ Having these facilities on one site would be terribly handy and would have a bro
  To support AIP creation and integration, and subsequent API validation using Mockgoose and Mocha, several files had to be created &/or updated: 
  EWD_Assign2_WebAPI
  + eventData.js (new)
+ + reviewData.js (new)
+ + venueData.js (new)
+ + detailsData.js (new) 
  + server.js (updated)
  
  EWD_Assign2_WebAPI\api\Events
@@ -110,9 +113,30 @@ Having these facilities on one site would be terribly handy and would have a bro
  + eventsModel.js (new)
  + index.js (new)
  
+ EWD_Assign2_WebAPI\api\Reviews
+ + reviews.js (new)
+ + reviewsModel.js (new)
+ + index.js (new)
+ 
+ EWD_Assign2_WebAPI\api\Venues
+ + venues.js (new)
+ + venuesModel.js (new)
+ + index.js (new)
+ 
+ EWD_Assign2_WebAPI\api\Details
+ + details.js (new)
+ + detailsModel.js (new)
+ + index.js (new) 
+ 
  EWD_Assign2_WebAPI\FieldArcheryFinder\src
  + eventApp.js (updated)
  + eventsApi.js (new)
+ + reviewApp.js (updated)
+ + reviewsApi.js (new)
+ + VenueApp.js (updated)
+ + venuesApi.js (new)
+ + venueDetailApp.js (updated)
+ + venueDetailApi.js (new)  
  
  Images show Events as an example:
  ![][image15]
@@ -141,7 +165,7 @@ Having these facilities on one site would be terribly handy and would have a bro
  + localhost:8080/api/venues
 ![][image9]
  
- Using Mocha, API testing for GET, ADD & DELETE performed. Screenshots of the test results in the console for Events, Reviews, Venues & [venue] Details shown below:
+ Using Mocha, API testing for GET, ADD & DELETE performed (EWD_Assign2_WebAPI>npm run test). Screenshots of the test results in the console for Events, Reviews, Venues & [venue] Details shown below:
 ![][image12]
 
 ![][image13]

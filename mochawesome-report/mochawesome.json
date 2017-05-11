@@ -5,14 +5,14 @@
     "passes": 6,
     "pending": 0,
     "failures": 10,
-    "start": "2017-05-09T08:47:01.488Z",
-    "end": "2017-05-09T08:47:02.148Z",
-    "duration": 660,
+    "start": "2017-05-11T18:20:08.344Z",
+    "end": "2017-05-11T18:20:09.113Z",
+    "duration": 769,
     "testsRegistered": 16,
     "passPercent": 37.5,
     "pendingPercent": 0,
-    "other": 0,
-    "hasOther": false,
+    "other": 1,
+    "hasOther": true,
     "skipped": 0,
     "hasSkipped": false,
     "passPercentClass": "danger",
@@ -62,8 +62,8 @@
               "diff": "- 404\n+ 200\n"
             },
             "isRoot": false,
-            "uuid": "fda65e4f-df4c-411d-bada-ded552f4b2f2",
-            "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+            "uuid": "b1cc146d-fc23-41b6-b548-6fd2a9e2fe36",
+            "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
             "skipped": false
           },
           {
@@ -103,8 +103,8 @@
               "diff": "- 404\n+ 201\n"
             },
             "isRoot": false,
-            "uuid": "db023102-d20a-435a-873b-61cabe27375b",
-            "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+            "uuid": "78399335-4ea1-4448-b5de-272a8cb71fbd",
+            "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
             "skipped": false
           },
           {
@@ -122,8 +122,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testDetailsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "2dc834f1-672f-4814-9f5c-833d2ea64edd",
-            "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+            "uuid": "6078784f-45dc-4c82-9fb2-06b4d95d8257",
+            "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
             "skipped": false
           },
           {
@@ -141,8 +141,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testDetailsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "8f1732c2-20c8-4a3d-b1cf-f20f00eb8145",
-            "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+            "uuid": "c13db5ce-206b-4f86-8934-c7265293b03f",
+            "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
             "skipped": false
           }
         ],
@@ -150,7 +150,7 @@
         "root": false,
         "_timeout": 120000,
         "file": "\\test\\testDetailsApi.js",
-        "uuid": "96066c79-8242-4761-bfb5-61d51d83717b",
+        "uuid": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
         "fullFile": "C:\\Users\\ellingworthl\\Documents\\MASTERS_WIT\\EWD_Assign2_WebAPI\\test\\testDetailsApi.js",
         "passes": [],
         "failures": [
@@ -191,8 +191,8 @@
               "diff": "- 404\n+ 200\n"
             },
             "isRoot": false,
-            "uuid": "fda65e4f-df4c-411d-bada-ded552f4b2f2",
-            "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+            "uuid": "b1cc146d-fc23-41b6-b548-6fd2a9e2fe36",
+            "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
             "skipped": false
           },
           {
@@ -232,8 +232,8 @@
               "diff": "- 404\n+ 201\n"
             },
             "isRoot": false,
-            "uuid": "db023102-d20a-435a-873b-61cabe27375b",
-            "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+            "uuid": "78399335-4ea1-4448-b5de-272a8cb71fbd",
+            "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
             "skipped": false
           },
           {
@@ -251,8 +251,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testDetailsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "2dc834f1-672f-4814-9f5c-833d2ea64edd",
-            "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+            "uuid": "6078784f-45dc-4c82-9fb2-06b4d95d8257",
+            "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
             "skipped": false
           },
           {
@@ -270,8 +270,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testDetailsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "8f1732c2-20c8-4a3d-b1cf-f20f00eb8145",
-            "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+            "uuid": "c13db5ce-206b-4f86-8934-c7265293b03f",
+            "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
             "skipped": false
           }
         ],
@@ -298,34 +298,34 @@
             "title": "should return collection of JSON documents",
             "fullTitle": "Events API unit tests should return collection of JSON documents",
             "timedOut": false,
-            "duration": 33,
+            "duration": 57,
             "state": "passed",
-            "speed": "fast",
+            "speed": "medium",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
+            "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
             "err": {},
             "isRoot": false,
-            "uuid": "f78b3166-eeee-471c-b577-f6006ead34cf",
-            "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+            "uuid": "abcda4ed-44f0-4417-90d1-d8fc1fe6ca32",
+            "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
             "skipped": false
           },
           {
             "title": "should add an event",
             "fullTitle": "Events API unit tests should add an event",
             "timedOut": false,
-            "duration": 35,
+            "duration": 34,
             "state": "passed",
             "speed": "fast",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "(0, _supertest2.default)(_server.server).post('/api/events').send({ round: \"Test Round\", venue: \"Test Venue\", date: \"2017/07/01\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.event.should.have.property('_id');\n  res.body.event.round.should.equal('Test Round');\n  done();\n});",
+            "code": "(0, _supertest2.default)(_server.server).post('/api/Events').send({ round: \"Test Round\", venue: \"Test Venue\", date: \"2017/07/01\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.event.should.have.property('round');\n  res.body.event.round.should.equal('Test Round');\n  done();\n});",
             "err": {},
             "isRoot": false,
-            "uuid": "1778b3e7-281c-487e-b193-38751d334d13",
-            "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+            "uuid": "8f076230-eb73-4531-bcd7-8f2919eba11a",
+            "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
             "skipped": false
           },
           {
@@ -337,14 +337,14 @@
             "pass": false,
             "fail": true,
             "pending": false,
-            "code": "var superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.delete(\"/api/events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    res.body._id.should.equal(id);\n    res.body.should.have.property(\"round\");\n    done();\n  });\n});",
+            "code": "var superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.delete(\"/api/Events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    res.body._id.should.equal(id);\n    res.body.should.have.property(\"round\");\n    done();\n  });\n});",
             "err": {
               "uncaught": true,
-              "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
+              "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:50:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "548f1e99-5bc4-4e50-b09a-d9eb7f7adef0",
-            "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+            "uuid": "eac91488-38a9-4de6-8a62-e9aaae9ca82f",
+            "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
             "skipped": false
           },
           {
@@ -356,14 +356,14 @@
             "pass": false,
             "fail": true,
             "pending": false,
-            "code": "// post to /api/events\n// calling home page api\nvar superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.put(\"/api/events/\" + id).send({ round: \"999 Round\", venue: \"999 Venue\", date: \"999 Date\" }).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    superserver.delete(\"/api/events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      res.body._id.should.equal(id);\n      res.body.round.should.equal(\"Round 999\");\n      done();\n    });\n  });\n});",
+            "code": "// post to /api/Events\n// calling home page api\nvar superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.put(\"/api/Events/\" + id).send({ round: \"999 Round\", venue: \"999 Venue\", date: \"999 Date\" }).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    superserver.delete(\"/api/Events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      res.body._id.should.equal(id);\n      res.body.round.should.equal(\"Round 999\");\n      done();\n    });\n  });\n});",
             "err": {
               "uncaught": true,
-              "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
+              "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:75:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "718a0eff-9b32-4d46-b5d8-3629e73df819",
-            "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+            "uuid": "ad0f5770-f7f8-4952-a70c-ea3540b8c640",
+            "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
             "skipped": false
           }
         ],
@@ -371,41 +371,41 @@
         "root": false,
         "_timeout": 120000,
         "file": "\\test\\testEventsApi.js",
-        "uuid": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+        "uuid": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
         "fullFile": "C:\\Users\\ellingworthl\\Documents\\MASTERS_WIT\\EWD_Assign2_WebAPI\\test\\testEventsApi.js",
         "passes": [
           {
             "title": "should return collection of JSON documents",
             "fullTitle": "Events API unit tests should return collection of JSON documents",
             "timedOut": false,
-            "duration": 33,
+            "duration": 57,
             "state": "passed",
-            "speed": "fast",
+            "speed": "medium",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
+            "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
             "err": {},
             "isRoot": false,
-            "uuid": "f78b3166-eeee-471c-b577-f6006ead34cf",
-            "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+            "uuid": "abcda4ed-44f0-4417-90d1-d8fc1fe6ca32",
+            "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
             "skipped": false
           },
           {
             "title": "should add an event",
             "fullTitle": "Events API unit tests should add an event",
             "timedOut": false,
-            "duration": 35,
+            "duration": 34,
             "state": "passed",
             "speed": "fast",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "(0, _supertest2.default)(_server.server).post('/api/events').send({ round: \"Test Round\", venue: \"Test Venue\", date: \"2017/07/01\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.event.should.have.property('_id');\n  res.body.event.round.should.equal('Test Round');\n  done();\n});",
+            "code": "(0, _supertest2.default)(_server.server).post('/api/Events').send({ round: \"Test Round\", venue: \"Test Venue\", date: \"2017/07/01\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.event.should.have.property('round');\n  res.body.event.round.should.equal('Test Round');\n  done();\n});",
             "err": {},
             "isRoot": false,
-            "uuid": "1778b3e7-281c-487e-b193-38751d334d13",
-            "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+            "uuid": "8f076230-eb73-4531-bcd7-8f2919eba11a",
+            "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
             "skipped": false
           }
         ],
@@ -419,14 +419,14 @@
             "pass": false,
             "fail": true,
             "pending": false,
-            "code": "var superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.delete(\"/api/events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    res.body._id.should.equal(id);\n    res.body.should.have.property(\"round\");\n    done();\n  });\n});",
+            "code": "var superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.delete(\"/api/Events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    res.body._id.should.equal(id);\n    res.body.should.have.property(\"round\");\n    done();\n  });\n});",
             "err": {
               "uncaught": true,
-              "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
+              "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:50:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "548f1e99-5bc4-4e50-b09a-d9eb7f7adef0",
-            "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+            "uuid": "eac91488-38a9-4de6-8a62-e9aaae9ca82f",
+            "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
             "skipped": false
           },
           {
@@ -438,14 +438,14 @@
             "pass": false,
             "fail": true,
             "pending": false,
-            "code": "// post to /api/events\n// calling home page api\nvar superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.put(\"/api/events/\" + id).send({ round: \"999 Round\", venue: \"999 Venue\", date: \"999 Date\" }).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    superserver.delete(\"/api/events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      res.body._id.should.equal(id);\n      res.body.round.should.equal(\"Round 999\");\n      done();\n    });\n  });\n});",
+            "code": "// post to /api/Events\n// calling home page api\nvar superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.put(\"/api/Events/\" + id).send({ round: \"999 Round\", venue: \"999 Venue\", date: \"999 Date\" }).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    superserver.delete(\"/api/Events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      res.body._id.should.equal(id);\n      res.body.round.should.equal(\"Round 999\");\n      done();\n    });\n  });\n});",
             "err": {
               "uncaught": true,
-              "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
+              "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:75:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "718a0eff-9b32-4d46-b5d8-3629e73df819",
-            "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+            "uuid": "ad0f5770-f7f8-4952-a70c-ea3540b8c640",
+            "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
             "skipped": false
           }
         ],
@@ -461,7 +461,7 @@
         "hasFailures": true,
         "hasPending": false,
         "hasSkipped": false,
-        "duration": 68,
+        "duration": 91,
         "rootEmpty": false
       },
       {
@@ -472,24 +472,24 @@
             "title": "should return collection of JSON documents",
             "fullTitle": "Reviews API unit tests should return collection of JSON documents",
             "timedOut": false,
-            "duration": 27,
+            "duration": 43,
             "state": "passed",
-            "speed": "fast",
+            "speed": "medium",
             "pass": true,
             "fail": false,
             "pending": false,
             "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/reviews\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
             "err": {},
             "isRoot": false,
-            "uuid": "4ea67f27-52a5-4d10-8ad3-c2db9c304e4f",
-            "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+            "uuid": "f498be0b-a94d-4b0d-8144-eb5335768f1f",
+            "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
             "skipped": false
           },
           {
             "title": "should add a review",
             "fullTitle": "Reviews API unit tests should add a review",
             "timedOut": false,
-            "duration": 21,
+            "duration": 24,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -498,8 +498,8 @@
             "code": "(0, _supertest2.default)(_server.server).post('/api/reviews').send({ title: \"Test Review\", link: \"https://github.com/ellingworthl/EWD_Assign2_WebAPI\", username: \"TiggerLady\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.review.should.have.property('_id');\n  res.body.review.username.should.equal('TiggerLady');\n  done();\n});",
             "err": {},
             "isRoot": false,
-            "uuid": "f458c9d2-ab07-4b3b-8480-ebe5857edb36",
-            "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+            "uuid": "40593574-7647-472f-a4f7-dfd7ce756031",
+            "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
             "skipped": false
           },
           {
@@ -517,8 +517,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testReviewsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "1eee6311-a778-4b76-83a4-81cbe882c406",
-            "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+            "uuid": "2429cad3-52e1-4f42-aed3-1b3152aba7c3",
+            "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
             "skipped": false
           },
           {
@@ -536,8 +536,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testReviewsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "fd7470f0-3222-4fb8-9c7c-79bda85d6a5e",
-            "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+            "uuid": "8fc22783-65e6-4bd9-8282-ad84a2e987be",
+            "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
             "skipped": false
           }
         ],
@@ -545,31 +545,31 @@
         "root": false,
         "_timeout": 120000,
         "file": "\\test\\testReviewsApi.js",
-        "uuid": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+        "uuid": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
         "fullFile": "C:\\Users\\ellingworthl\\Documents\\MASTERS_WIT\\EWD_Assign2_WebAPI\\test\\testReviewsApi.js",
         "passes": [
           {
             "title": "should return collection of JSON documents",
             "fullTitle": "Reviews API unit tests should return collection of JSON documents",
             "timedOut": false,
-            "duration": 27,
+            "duration": 43,
             "state": "passed",
-            "speed": "fast",
+            "speed": "medium",
             "pass": true,
             "fail": false,
             "pending": false,
             "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/reviews\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
             "err": {},
             "isRoot": false,
-            "uuid": "4ea67f27-52a5-4d10-8ad3-c2db9c304e4f",
-            "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+            "uuid": "f498be0b-a94d-4b0d-8144-eb5335768f1f",
+            "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
             "skipped": false
           },
           {
             "title": "should add a review",
             "fullTitle": "Reviews API unit tests should add a review",
             "timedOut": false,
-            "duration": 21,
+            "duration": 24,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -578,8 +578,8 @@
             "code": "(0, _supertest2.default)(_server.server).post('/api/reviews').send({ title: \"Test Review\", link: \"https://github.com/ellingworthl/EWD_Assign2_WebAPI\", username: \"TiggerLady\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.review.should.have.property('_id');\n  res.body.review.username.should.equal('TiggerLady');\n  done();\n});",
             "err": {},
             "isRoot": false,
-            "uuid": "f458c9d2-ab07-4b3b-8480-ebe5857edb36",
-            "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+            "uuid": "40593574-7647-472f-a4f7-dfd7ce756031",
+            "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
             "skipped": false
           }
         ],
@@ -599,8 +599,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testReviewsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "1eee6311-a778-4b76-83a4-81cbe882c406",
-            "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+            "uuid": "2429cad3-52e1-4f42-aed3-1b3152aba7c3",
+            "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
             "skipped": false
           },
           {
@@ -618,8 +618,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testReviewsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "fd7470f0-3222-4fb8-9c7c-79bda85d6a5e",
-            "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+            "uuid": "8fc22783-65e6-4bd9-8282-ad84a2e987be",
+            "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
             "skipped": false
           }
         ],
@@ -635,7 +635,7 @@
         "hasFailures": true,
         "hasPending": false,
         "hasSkipped": false,
-        "duration": 48,
+        "duration": 67,
         "rootEmpty": false
       },
       {
@@ -646,7 +646,7 @@
             "title": "should return collection of JSON documents",
             "fullTitle": "Venues API unit tests should return collection of JSON documents",
             "timedOut": false,
-            "duration": 20,
+            "duration": 15,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -655,15 +655,15 @@
             "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/venues\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
             "err": {},
             "isRoot": false,
-            "uuid": "9a6db0af-61a0-45f8-8ffb-9aa62a708cfc",
-            "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+            "uuid": "b8f5bf0b-7012-4e69-8036-e4b5d5684633",
+            "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
             "skipped": false
           },
           {
             "title": "should add a venue",
             "fullTitle": "Venues API unit tests should add a venue",
             "timedOut": false,
-            "duration": 14,
+            "duration": 12,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -672,8 +672,8 @@
             "code": "(0, _supertest2.default)(_server.server).post('/api/venues').send({ id: \"001\", name: \"Test Venue\", town: \"Test Town\", county: \"Test County\", phoneno: \"Test Ph #\", imageUrl: \"Test Image URL\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.venue.should.have.property('_id');\n  res.body.venue.town.should.equal('Test Town');\n  done();\n});",
             "err": {},
             "isRoot": false,
-            "uuid": "68b25f38-6c43-483d-bd23-e2eca37a8c03",
-            "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+            "uuid": "857b0696-6b32-4ea3-b30c-b9b9e2a40e2d",
+            "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
             "skipped": false
           },
           {
@@ -691,8 +691,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testVenuesApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "c88d6a78-288f-4b53-8206-a3458ec5a37c",
-            "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+            "uuid": "801d2702-7fac-4c73-995f-058c568414f3",
+            "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
             "skipped": false
           },
           {
@@ -710,8 +710,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testVenuesApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "e044722a-0ce2-4723-9675-fab7ac5ab349",
-            "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+            "uuid": "2bb1023f-a228-496d-959d-6b096949936b",
+            "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
             "skipped": false
           }
         ],
@@ -719,14 +719,14 @@
         "root": false,
         "_timeout": 120000,
         "file": "\\test\\testVenuesApi.js",
-        "uuid": "d2649a91-4166-42c9-92de-667a9614d1e3",
+        "uuid": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
         "fullFile": "C:\\Users\\ellingworthl\\Documents\\MASTERS_WIT\\EWD_Assign2_WebAPI\\test\\testVenuesApi.js",
         "passes": [
           {
             "title": "should return collection of JSON documents",
             "fullTitle": "Venues API unit tests should return collection of JSON documents",
             "timedOut": false,
-            "duration": 20,
+            "duration": 15,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -735,15 +735,15 @@
             "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/venues\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
             "err": {},
             "isRoot": false,
-            "uuid": "9a6db0af-61a0-45f8-8ffb-9aa62a708cfc",
-            "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+            "uuid": "b8f5bf0b-7012-4e69-8036-e4b5d5684633",
+            "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
             "skipped": false
           },
           {
             "title": "should add a venue",
             "fullTitle": "Venues API unit tests should add a venue",
             "timedOut": false,
-            "duration": 14,
+            "duration": 12,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -752,8 +752,8 @@
             "code": "(0, _supertest2.default)(_server.server).post('/api/venues').send({ id: \"001\", name: \"Test Venue\", town: \"Test Town\", county: \"Test County\", phoneno: \"Test Ph #\", imageUrl: \"Test Image URL\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.venue.should.have.property('_id');\n  res.body.venue.town.should.equal('Test Town');\n  done();\n});",
             "err": {},
             "isRoot": false,
-            "uuid": "68b25f38-6c43-483d-bd23-e2eca37a8c03",
-            "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+            "uuid": "857b0696-6b32-4ea3-b30c-b9b9e2a40e2d",
+            "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
             "skipped": false
           }
         ],
@@ -773,8 +773,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testVenuesApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "c88d6a78-288f-4b53-8206-a3458ec5a37c",
-            "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+            "uuid": "801d2702-7fac-4c73-995f-058c568414f3",
+            "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
             "skipped": false
           },
           {
@@ -792,8 +792,8 @@
               "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testVenuesApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
             },
             "isRoot": false,
-            "uuid": "e044722a-0ce2-4723-9675-fab7ac5ab349",
-            "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+            "uuid": "2bb1023f-a228-496d-959d-6b096949936b",
+            "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
             "skipped": false
           }
         ],
@@ -809,7 +809,7 @@
         "hasFailures": true,
         "hasPending": false,
         "hasSkipped": false,
-        "duration": 34,
+        "duration": 27,
         "rootEmpty": false
       }
     ],
@@ -817,7 +817,7 @@
     "pending": [],
     "root": true,
     "_timeout": 2000,
-    "uuid": "e19fb665-e5be-4a8d-9d63-06dca3c60369",
+    "uuid": "1169554d-d3c4-454d-9672-95a58a78e64b",
     "fullFile": "",
     "file": "",
     "passes": [],
@@ -875,8 +875,8 @@
         "diff": "- 404\n+ 200\n"
       },
       "isRoot": false,
-      "uuid": "fda65e4f-df4c-411d-bada-ded552f4b2f2",
-      "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+      "uuid": "b1cc146d-fc23-41b6-b548-6fd2a9e2fe36",
+      "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
       "skipped": false
     },
     {
@@ -916,8 +916,8 @@
         "diff": "- 404\n+ 201\n"
       },
       "isRoot": false,
-      "uuid": "db023102-d20a-435a-873b-61cabe27375b",
-      "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+      "uuid": "78399335-4ea1-4448-b5de-272a8cb71fbd",
+      "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
       "skipped": false
     },
     {
@@ -935,8 +935,8 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testDetailsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "2dc834f1-672f-4814-9f5c-833d2ea64edd",
-      "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+      "uuid": "6078784f-45dc-4c82-9fb2-06b4d95d8257",
+      "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
       "skipped": false
     },
     {
@@ -954,42 +954,42 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testDetailsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "8f1732c2-20c8-4a3d-b1cf-f20f00eb8145",
-      "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+      "uuid": "c13db5ce-206b-4f86-8934-c7265293b03f",
+      "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
       "skipped": false
     },
     {
       "title": "should return collection of JSON documents",
       "fullTitle": "Events API unit tests should return collection of JSON documents",
       "timedOut": false,
-      "duration": 33,
+      "duration": 57,
       "state": "passed",
-      "speed": "fast",
+      "speed": "medium",
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
+      "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
       "err": {},
       "isRoot": false,
-      "uuid": "f78b3166-eeee-471c-b577-f6006ead34cf",
-      "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+      "uuid": "abcda4ed-44f0-4417-90d1-d8fc1fe6ca32",
+      "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
       "skipped": false
     },
     {
       "title": "should add an event",
       "fullTitle": "Events API unit tests should add an event",
       "timedOut": false,
-      "duration": 35,
+      "duration": 34,
       "state": "passed",
       "speed": "fast",
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "(0, _supertest2.default)(_server.server).post('/api/events').send({ round: \"Test Round\", venue: \"Test Venue\", date: \"2017/07/01\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.event.should.have.property('_id');\n  res.body.event.round.should.equal('Test Round');\n  done();\n});",
+      "code": "(0, _supertest2.default)(_server.server).post('/api/Events').send({ round: \"Test Round\", venue: \"Test Venue\", date: \"2017/07/01\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.event.should.have.property('round');\n  res.body.event.round.should.equal('Test Round');\n  done();\n});",
       "err": {},
       "isRoot": false,
-      "uuid": "1778b3e7-281c-487e-b193-38751d334d13",
-      "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+      "uuid": "8f076230-eb73-4531-bcd7-8f2919eba11a",
+      "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
       "skipped": false
     },
     {
@@ -1001,14 +1001,14 @@
       "pass": false,
       "fail": true,
       "pending": false,
-      "code": "var superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.delete(\"/api/events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    res.body._id.should.equal(id);\n    res.body.should.have.property(\"round\");\n    done();\n  });\n});",
+      "code": "var superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.delete(\"/api/Events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    res.body._id.should.equal(id);\n    res.body.should.have.property(\"round\");\n    done();\n  });\n});",
       "err": {
         "uncaught": true,
-        "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
+        "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:50:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "548f1e99-5bc4-4e50-b09a-d9eb7f7adef0",
-      "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+      "uuid": "eac91488-38a9-4de6-8a62-e9aaae9ca82f",
+      "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
       "skipped": false
     },
     {
@@ -1020,38 +1020,38 @@
       "pass": false,
       "fail": true,
       "pending": false,
-      "code": "// post to /api/events\n// calling home page api\nvar superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.put(\"/api/events/\" + id).send({ round: \"999 Round\", venue: \"999 Venue\", date: \"999 Date\" }).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    superserver.delete(\"/api/events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      res.body._id.should.equal(id);\n      res.body.round.should.equal(\"Round 999\");\n      done();\n    });\n  });\n});",
+      "code": "// post to /api/Events\n// calling home page api\nvar superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.put(\"/api/Events/\" + id).send({ round: \"999 Round\", venue: \"999 Venue\", date: \"999 Date\" }).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    superserver.delete(\"/api/Events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      res.body._id.should.equal(id);\n      res.body.round.should.equal(\"Round 999\");\n      done();\n    });\n  });\n});",
       "err": {
         "uncaught": true,
-        "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
+        "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:75:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "718a0eff-9b32-4d46-b5d8-3629e73df819",
-      "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+      "uuid": "ad0f5770-f7f8-4952-a70c-ea3540b8c640",
+      "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
       "skipped": false
     },
     {
       "title": "should return collection of JSON documents",
       "fullTitle": "Reviews API unit tests should return collection of JSON documents",
       "timedOut": false,
-      "duration": 27,
+      "duration": 43,
       "state": "passed",
-      "speed": "fast",
+      "speed": "medium",
       "pass": true,
       "fail": false,
       "pending": false,
       "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/reviews\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
       "err": {},
       "isRoot": false,
-      "uuid": "4ea67f27-52a5-4d10-8ad3-c2db9c304e4f",
-      "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+      "uuid": "f498be0b-a94d-4b0d-8144-eb5335768f1f",
+      "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
       "skipped": false
     },
     {
       "title": "should add a review",
       "fullTitle": "Reviews API unit tests should add a review",
       "timedOut": false,
-      "duration": 21,
+      "duration": 24,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -1060,8 +1060,8 @@
       "code": "(0, _supertest2.default)(_server.server).post('/api/reviews').send({ title: \"Test Review\", link: \"https://github.com/ellingworthl/EWD_Assign2_WebAPI\", username: \"TiggerLady\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.review.should.have.property('_id');\n  res.body.review.username.should.equal('TiggerLady');\n  done();\n});",
       "err": {},
       "isRoot": false,
-      "uuid": "f458c9d2-ab07-4b3b-8480-ebe5857edb36",
-      "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+      "uuid": "40593574-7647-472f-a4f7-dfd7ce756031",
+      "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
       "skipped": false
     },
     {
@@ -1079,8 +1079,8 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testReviewsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "1eee6311-a778-4b76-83a4-81cbe882c406",
-      "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+      "uuid": "2429cad3-52e1-4f42-aed3-1b3152aba7c3",
+      "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
       "skipped": false
     },
     {
@@ -1098,15 +1098,15 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testReviewsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "fd7470f0-3222-4fb8-9c7c-79bda85d6a5e",
-      "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+      "uuid": "8fc22783-65e6-4bd9-8282-ad84a2e987be",
+      "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
       "skipped": false
     },
     {
       "title": "should return collection of JSON documents",
       "fullTitle": "Venues API unit tests should return collection of JSON documents",
       "timedOut": false,
-      "duration": 20,
+      "duration": 15,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -1115,15 +1115,15 @@
       "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/venues\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
       "err": {},
       "isRoot": false,
-      "uuid": "9a6db0af-61a0-45f8-8ffb-9aa62a708cfc",
-      "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+      "uuid": "b8f5bf0b-7012-4e69-8036-e4b5d5684633",
+      "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
       "skipped": false
     },
     {
       "title": "should add a venue",
       "fullTitle": "Venues API unit tests should add a venue",
       "timedOut": false,
-      "duration": 14,
+      "duration": 12,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -1132,8 +1132,8 @@
       "code": "(0, _supertest2.default)(_server.server).post('/api/venues').send({ id: \"001\", name: \"Test Venue\", town: \"Test Town\", county: \"Test County\", phoneno: \"Test Ph #\", imageUrl: \"Test Image URL\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.venue.should.have.property('_id');\n  res.body.venue.town.should.equal('Test Town');\n  done();\n});",
       "err": {},
       "isRoot": false,
-      "uuid": "68b25f38-6c43-483d-bd23-e2eca37a8c03",
-      "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+      "uuid": "857b0696-6b32-4ea3-b30c-b9b9e2a40e2d",
+      "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
       "skipped": false
     },
     {
@@ -1151,8 +1151,8 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testVenuesApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "c88d6a78-288f-4b53-8206-a3458ec5a37c",
-      "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+      "uuid": "801d2702-7fac-4c73-995f-058c568414f3",
+      "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
       "skipped": false
     },
     {
@@ -1170,8 +1170,8 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testVenuesApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "e044722a-0ce2-4723-9675-fab7ac5ab349",
-      "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+      "uuid": "2bb1023f-a228-496d-959d-6b096949936b",
+      "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
       "skipped": false
     }
   ],
@@ -1181,58 +1181,58 @@
       "title": "should return collection of JSON documents",
       "fullTitle": "Events API unit tests should return collection of JSON documents",
       "timedOut": false,
-      "duration": 33,
+      "duration": 57,
       "state": "passed",
-      "speed": "fast",
+      "speed": "medium",
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
+      "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
       "err": {},
       "isRoot": false,
-      "uuid": "f78b3166-eeee-471c-b577-f6006ead34cf",
-      "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+      "uuid": "abcda4ed-44f0-4417-90d1-d8fc1fe6ca32",
+      "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
       "skipped": false
     },
     {
       "title": "should add an event",
       "fullTitle": "Events API unit tests should add an event",
       "timedOut": false,
-      "duration": 35,
+      "duration": 34,
       "state": "passed",
       "speed": "fast",
       "pass": true,
       "fail": false,
       "pending": false,
-      "code": "(0, _supertest2.default)(_server.server).post('/api/events').send({ round: \"Test Round\", venue: \"Test Venue\", date: \"2017/07/01\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.event.should.have.property('_id');\n  res.body.event.round.should.equal('Test Round');\n  done();\n});",
+      "code": "(0, _supertest2.default)(_server.server).post('/api/Events').send({ round: \"Test Round\", venue: \"Test Venue\", date: \"2017/07/01\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.event.should.have.property('round');\n  res.body.event.round.should.equal('Test Round');\n  done();\n});",
       "err": {},
       "isRoot": false,
-      "uuid": "1778b3e7-281c-487e-b193-38751d334d13",
-      "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+      "uuid": "8f076230-eb73-4531-bcd7-8f2919eba11a",
+      "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
       "skipped": false
     },
     {
       "title": "should return collection of JSON documents",
       "fullTitle": "Reviews API unit tests should return collection of JSON documents",
       "timedOut": false,
-      "duration": 27,
+      "duration": 43,
       "state": "passed",
-      "speed": "fast",
+      "speed": "medium",
       "pass": true,
       "fail": false,
       "pending": false,
       "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/reviews\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
       "err": {},
       "isRoot": false,
-      "uuid": "4ea67f27-52a5-4d10-8ad3-c2db9c304e4f",
-      "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+      "uuid": "f498be0b-a94d-4b0d-8144-eb5335768f1f",
+      "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
       "skipped": false
     },
     {
       "title": "should add a review",
       "fullTitle": "Reviews API unit tests should add a review",
       "timedOut": false,
-      "duration": 21,
+      "duration": 24,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -1241,15 +1241,15 @@
       "code": "(0, _supertest2.default)(_server.server).post('/api/reviews').send({ title: \"Test Review\", link: \"https://github.com/ellingworthl/EWD_Assign2_WebAPI\", username: \"TiggerLady\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.review.should.have.property('_id');\n  res.body.review.username.should.equal('TiggerLady');\n  done();\n});",
       "err": {},
       "isRoot": false,
-      "uuid": "f458c9d2-ab07-4b3b-8480-ebe5857edb36",
-      "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+      "uuid": "40593574-7647-472f-a4f7-dfd7ce756031",
+      "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
       "skipped": false
     },
     {
       "title": "should return collection of JSON documents",
       "fullTitle": "Venues API unit tests should return collection of JSON documents",
       "timedOut": false,
-      "duration": 20,
+      "duration": 15,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -1258,15 +1258,15 @@
       "code": "// calling home page api\n    (0, _supertest2.default)(_server.server).get(\"/api/venues\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      // HTTP status should be 200\n      res.status.should.equal(200);\n      done();\n    });",
       "err": {},
       "isRoot": false,
-      "uuid": "9a6db0af-61a0-45f8-8ffb-9aa62a708cfc",
-      "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+      "uuid": "b8f5bf0b-7012-4e69-8036-e4b5d5684633",
+      "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
       "skipped": false
     },
     {
       "title": "should add a venue",
       "fullTitle": "Venues API unit tests should add a venue",
       "timedOut": false,
-      "duration": 14,
+      "duration": 12,
       "state": "passed",
       "speed": "fast",
       "pass": true,
@@ -1275,12 +1275,36 @@
       "code": "(0, _supertest2.default)(_server.server).post('/api/venues').send({ id: \"001\", name: \"Test Venue\", town: \"Test Town\", county: \"Test County\", phoneno: \"Test Ph #\", imageUrl: \"Test Image URL\" }).expect(\"Content-type\", /json/).expect(201).end(function (err, res) {\n  res.status.should.equal(201);\n  res.body.venue.should.have.property('_id');\n  res.body.venue.town.should.equal('Test Town');\n  done();\n});",
       "err": {},
       "isRoot": false,
-      "uuid": "68b25f38-6c43-483d-bd23-e2eca37a8c03",
-      "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+      "uuid": "857b0696-6b32-4ea3-b30c-b9b9e2a40e2d",
+      "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
       "skipped": false
     }
   ],
   "allFailures": [
+    {
+      "title": "Uncaught error outside test suite",
+      "fullTitle": "Details API unit tests Uncaught error outside test suite",
+      "timedOut": false,
+      "duration": 0,
+      "state": "failed",
+      "pass": false,
+      "fail": true,
+      "pending": false,
+      "code": "",
+      "err": {
+        "code": "EADDRINUSE",
+        "errno": "EADDRINUSE",
+        "syscall": "listen",
+        "address": "127.0.0.1",
+        "port": 8080,
+        "uncaught": true,
+        "estack": "Error: listen EADDRINUSE 127.0.0.1:8080\n    at Object.exports._errnoException (util.js:1022:11)\n    at exports._exceptionWithHostPort (util.js:1045:20)\n    at Server._listen2 (net.js:1259:14)\n    at listen (net.js:1295:10)\n    at net.js:1405:9\n    at GetAddrInfoReqWrap.asyncCallback [as callback] (dns.js:62:16)\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:81:10)"
+      },
+      "isRoot": false,
+      "uuid": "dd02fd20-92f0-4fd8-ac17-253b68d992c4",
+      "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
+      "skipped": false
+    },
     {
       "title": "should return collection of JSON documents",
       "fullTitle": "Details API unit tests should return collection of JSON documents",
@@ -1307,7 +1331,7 @@
             "showDiff": true,
             "actual": 404,
             "negate": false,
-            "assertion": "[Circular ~.allFailures.0.err.assertion]"
+            "assertion": "[Circular ~.allFailures.1.err.assertion]"
           },
           "light": false
         },
@@ -1318,8 +1342,8 @@
         "diff": "- 404\n+ 200\n"
       },
       "isRoot": false,
-      "uuid": "fda65e4f-df4c-411d-bada-ded552f4b2f2",
-      "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+      "uuid": "b1cc146d-fc23-41b6-b548-6fd2a9e2fe36",
+      "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
       "skipped": false
     },
     {
@@ -1348,7 +1372,7 @@
             "showDiff": true,
             "actual": 404,
             "negate": false,
-            "assertion": "[Circular ~.allFailures.1.err.assertion]"
+            "assertion": "[Circular ~.allFailures.2.err.assertion]"
           },
           "light": false
         },
@@ -1359,8 +1383,8 @@
         "diff": "- 404\n+ 201\n"
       },
       "isRoot": false,
-      "uuid": "db023102-d20a-435a-873b-61cabe27375b",
-      "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+      "uuid": "78399335-4ea1-4448-b5de-272a8cb71fbd",
+      "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
       "skipped": false
     },
     {
@@ -1378,8 +1402,8 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testDetailsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "2dc834f1-672f-4814-9f5c-833d2ea64edd",
-      "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+      "uuid": "6078784f-45dc-4c82-9fb2-06b4d95d8257",
+      "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
       "skipped": false
     },
     {
@@ -1397,8 +1421,8 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testDetailsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "8f1732c2-20c8-4a3d-b1cf-f20f00eb8145",
-      "parentUUID": "96066c79-8242-4761-bfb5-61d51d83717b",
+      "uuid": "c13db5ce-206b-4f86-8934-c7265293b03f",
+      "parentUUID": "ef6aa25a-c497-4933-85b1-dc59cd2089f9",
       "skipped": false
     },
     {
@@ -1410,14 +1434,14 @@
       "pass": false,
       "fail": true,
       "pending": false,
-      "code": "var superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.delete(\"/api/events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    res.body._id.should.equal(id);\n    res.body.should.have.property(\"round\");\n    done();\n  });\n});",
+      "code": "var superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.delete(\"/api/Events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    res.body._id.should.equal(id);\n    res.body.should.have.property(\"round\");\n    done();\n  });\n});",
       "err": {
         "uncaught": true,
-        "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
+        "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:50:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "548f1e99-5bc4-4e50-b09a-d9eb7f7adef0",
-      "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+      "uuid": "eac91488-38a9-4de6-8a62-e9aaae9ca82f",
+      "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
       "skipped": false
     },
     {
@@ -1429,14 +1453,14 @@
       "pass": false,
       "fail": true,
       "pending": false,
-      "code": "// post to /api/events\n// calling home page api\nvar superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.put(\"/api/events/\" + id).send({ round: \"999 Round\", venue: \"999 Venue\", date: \"999 Date\" }).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    superserver.delete(\"/api/events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      res.body._id.should.equal(id);\n      res.body.round.should.equal(\"Round 999\");\n      done();\n    });\n  });\n});",
+      "code": "// post to /api/Events\n// calling home page api\nvar superserver = (0, _supertest2.default)(_server.server);\nsuperserver.get(\"/api/Events\").expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n.end(function (err, res) {\n  var id = res.body[0]._id;\n  superserver.put(\"/api/Events/\" + id).send({ round: \"999 Round\", venue: \"999 Venue\", date: \"999 Date\" }).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n  .end(function (err, res) {\n    superserver.delete(\"/api/Events/\" + id).expect(\"Content-type\", /json/).expect(200) // This is HTTP response\n    .end(function (err, res) {\n      res.body._id.should.equal(id);\n      res.body.round.should.equal(\"Round 999\");\n      done();\n    });\n  });\n});",
       "err": {
         "uncaught": true,
-        "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
+        "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testEventsApi.js:75:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "718a0eff-9b32-4d46-b5d8-3629e73df819",
-      "parentUUID": "77e0f12b-3187-4e24-aa7a-49ac0fd1cf91",
+      "uuid": "ad0f5770-f7f8-4952-a70c-ea3540b8c640",
+      "parentUUID": "e9087000-92f4-422a-bb63-6afc9dbdc58a",
       "skipped": false
     },
     {
@@ -1454,8 +1478,8 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testReviewsApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "1eee6311-a778-4b76-83a4-81cbe882c406",
-      "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+      "uuid": "2429cad3-52e1-4f42-aed3-1b3152aba7c3",
+      "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
       "skipped": false
     },
     {
@@ -1473,8 +1497,8 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testReviewsApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "fd7470f0-3222-4fb8-9c7c-79bda85d6a5e",
-      "parentUUID": "56003d8c-1b56-4458-ad4b-9df7d5a94ae7",
+      "uuid": "8fc22783-65e6-4bd9-8282-ad84a2e987be",
+      "parentUUID": "5f3ba6a7-7fe5-4c67-9653-ad975e9e5cc6",
       "skipped": false
     },
     {
@@ -1492,8 +1516,8 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testVenuesApi.js:47:18)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "c88d6a78-288f-4b53-8206-a3458ec5a37c",
-      "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+      "uuid": "801d2702-7fac-4c73-995f-058c568414f3",
+      "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
       "skipped": false
     },
     {
@@ -1511,8 +1535,8 @@
         "estack": "TypeError: Cannot read property '_id' of undefined\n    at Test.<anonymous> (C:/Users/ellingworthl/Documents/MASTERS_WIT/EWD_Assign2_WebAPI/test/testVenuesApi.js:72:20)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:179:6)\n    at Server.assert (node_modules\\supertest\\lib\\test.js:131:12)\n    at emitCloseNT (net.js:1555:8)\n    at _combinedTickCallback (internal/process/next_tick.js:71:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
       },
       "isRoot": false,
-      "uuid": "e044722a-0ce2-4723-9675-fab7ac5ab349",
-      "parentUUID": "d2649a91-4166-42c9-92de-667a9614d1e3",
+      "uuid": "2bb1023f-a228-496d-959d-6b096949936b",
+      "parentUUID": "9190e86c-ecd4-4ab8-8678-444c0e56248f",
       "skipped": false
     }
   ],

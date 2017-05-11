@@ -2,6 +2,8 @@ import supertest from "supertest";
 import {server} from  "./../server.js";
 import should from "should";
 
+//correct case on API (was "/api/events" now "/api/Events")
+
 // UNIT test begin
 describe("Events API unit tests",function(){
   this.timeout(120000);
@@ -11,7 +13,7 @@ describe("Events API unit tests",function(){
 
 // calling home page api
     supertest(server)
-    .get("/api/events")
+    .get("/api/Events")
     .expect("Content-type",/json/)
     .expect(200) // This is HTTP response
     .end(function(err,res){
@@ -24,7 +26,7 @@ describe("Events API unit tests",function(){
 // #2 add an event
   it("should add an event",function(done){
     supertest(server)
-    .post('/api/events')
+    .post('/api/Events')
     .send({round:"Test Round",venue:"Test Venue",date:"2017/07/01"})
     .expect("Content-type",/json/)
     .expect(201)
@@ -40,13 +42,13 @@ describe("Events API unit tests",function(){
   it("should delete event",function(done){
     const superserver = supertest(server);
     superserver
-    .get("/api/events")
+    .get("/api/Events")
     .expect("Content-type",/json/)
     .expect(200) // This is HTTP response
     .end(function(err,res){
       const id = res.body[0]._id;
       superserver
-        .delete("/api/events/"+id)
+        .delete("/api/Events/"+id)
         .expect("Content-type",/json/)
         .expect(200) // This is HTTP response
         .end(function(err,res){
@@ -61,23 +63,23 @@ describe("Events API unit tests",function(){
 
 // #4 add & delete Event 999
   it("should add and delete Event 999",function(done){
-    // post to /api/events
+    // post to /api/Events
     // calling home page api
     const superserver = supertest(server);
     superserver
-    .get("/api/events")
+    .get("/api/Events")
     .expect("Content-type",/json/)
     .expect(200) // This is HTTP response
     .end(function(err,res){
         const id = res.body[0]._id;
         superserver
-        .put("/api/events/"+id)
+        .put("/api/Events/"+id)
         .send({round:"999 Round",venue:"999 Venue",date:"999 Date"})
         .expect("Content-type",/json/)
         .expect(200) // This is HTTP response
         .end(function(err,res){
             superserver
-            .delete("/api/events/"+id)
+            .delete("/api/Events/"+id)
             .expect("Content-type",/json/)
             .expect(200) // This is HTTP response
             .end(function(err,res){

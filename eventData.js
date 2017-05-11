@@ -7,7 +7,7 @@ import config from './config';
 
 const events = [
     {
-		"round": "IFAA Field",
+        "round": "IFAA Field",
         "venue": "Valley Bowmen",
         "date": "2017/04/23",
         "target_amt": "2x14"		
@@ -21,21 +21,21 @@ const events = [
     },
     
     {
-		"round": "Hunting Trail",
+        "round": "Hunting Trail",
         "venue": "South Cork Field Archers",
         "date": "2017/05/21"		,
         "target_amt": ">30"	
     },
     
     {
-		"round": "SBG",
+        "round": "SBG",
         "venue": "Mayo Archery Club",
         "date": "2017/06/04",
         "target_amt": "1x36"	
     },
 	
     {
-		"round": "IFAA UAR",
+        "round": "IFAA UAR",
         "venue": "Ashgrove Archers",
         "date": "2017/06/18",
         "target_amt": "2x14"	

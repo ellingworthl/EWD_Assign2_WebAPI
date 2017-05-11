@@ -2,14 +2,14 @@ import axios from 'axios';
 
 //get all events
 export const getAll = () => {
-  //console.log("eventsApi.js getAllEvents")
-  return axios('/api/Events')
+  console.log("eventsApi.js getAllEvents")
+  return axios('/api/events')
               .then(resp => resp.data);
 };
 
-//get single event
-export const getEvent = date => {
-  return axios.get(`/api/Events/${date}`)
+//get single event                             //************* _id is the key not date
+export const getEvent = _id => {
+  return axios.get(`/api/Events/${_id}`)
               .then(resp => resp.data);
 };
 
@@ -21,15 +21,17 @@ export const addEvent = (newRound, newVenue, newDate) => {
 };
 
 //delete an event
-export const deleteEvent = date => {
+export const deleteEvent = _id => {
   //console.log("eventsapi.js deleteEvent");
-  return axios.delete(`/api/Events/${date}`)
+  return axios.delete(`/api/Events/${_id}`)
               .then(resp => resp.data);
 };
 
 //modify an event
-export const updateEvent = (round,venue,date) => {
+export const updateEvent = (_id, round,venue,date) => {
   //console.log("api.js updateEvent");
-  return axios.put('/api/Events', {round: round, venue: venue, date : date})
+  console.log("eventsApi " + _id);
+  console.log(round + "  " + venue + "  " + date);
+  return axios.put(`/api/Events/${_id}`, {round: round, venue: venue, date : date})
   .then(resp => resp.data);
 };

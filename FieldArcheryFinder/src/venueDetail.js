@@ -3,7 +3,7 @@ import React from 'react';
 import request from 'superagent' ;
 //import { Link } from 'react-router';
 import './VenueApp.css';
-import * as api from './venueDetailApi';
+//import * as api from './venueDetailApi';
 
 //created Header section
 var HeaderSection = React.createClass({
