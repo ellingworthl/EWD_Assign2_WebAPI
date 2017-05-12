@@ -165,6 +165,18 @@ Having these facilities on one site would be terribly handy and would have a bro
  + localhost:8080/api/venues
 ![][image9]
  
+UPDATE: The API has been modified and all CRUD actions carried out through Postman call/update MongoDB successfully. 
+ + GET: http://localhost:8080/api/events/
+ + GET: http://localhost:8080/api/events/5914a66ae07bdd129450a8fe 
+ + POST: http://localhost:8080/api/events
+ + PUT: http://localhost:8080/api/events/59143de19a6c231cf0ef23ef
+ + DELETE: http://localhost:8080/api/events/59143de19a6c231cf0ef23ed
+ ![][image9.1]
+ ![][image9.2]
+ ![][image9.3]
+ ![][image9.4]
+ ![][image9.5]
+ 
  Using Mocha, API testing for GET, ADD & DELETE performed (EWD_Assign2_WebAPI>npm run test). Screenshots of the test results in the console for Events, Reviews, Venues & [venue] Details shown below:
 ![][image12]
 
@@ -307,3 +319,8 @@ Assignment 1
 [image14]: ./ReadMe_Images/Assign2_MochawsomeReport.png
 [image15]: ./ReadMe_Images/Assigment2_Events_Code.png
 [image16]: ./ReadMe_Images/Assigment2_Events_Code2.png
+[image9.1]: ./ReadMe_Images/Assign2_Postman_GET_Events.png
+[image9.2]: ./ReadMe_Images/Assign2_Postman_GET_Event_ByID.png
+[image9.3]: ./ReadMe_Images/Assign2_Postman_POST_Event.png
+[image9.4]: ./ReadMe_Images/Assign2_Postman_PUT_Event_ByID.png
+[image9.5]: ./ReadMe_Images/Assign2_Postman_DELETE_Event_ByID.png
