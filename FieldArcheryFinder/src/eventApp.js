@@ -230,7 +230,7 @@ var EventApp = React.createClass({
       api.addEvent(r,v,d)    //********************* method name
       .then(resp => {         // handle promise
         const newEvent = {"id": resp.id, "round": resp.round, "venue": resp.venue, "date": resp.date};
-        this.setState({evetns: this .state.events.conat([newEvent])});
+        this.setState({events: this.state.events.concat([newEvent])});
       })
     },
 
@@ -243,7 +243,7 @@ var EventApp = React.createClass({
       api.updateEvent(key,r,v,d)
         .then(resp => {
           const newEvent = {"id": resp.id, "round": resp.round, "venue": resp.venue, "date": resp.date};
-          this.setState({evetns: this .state.events.concat([newEvent])});
+          this.setState({events: this.state.events.concat([newEvent])});
         })             
     },  
 
