@@ -45,7 +45,7 @@ import buttons from './content/eventButtons';
               />
               </td>
               <td>
-              <input type="text" className="form-control" 
+              <input type="date" className="form-control" 
                      placeholder="Date (YYYY/MM/DD)"
                      value={this.state.date}
                      onChange={this.handleDateChange}
@@ -76,7 +76,7 @@ import buttons from './content/eventButtons';
               this.setState({ status : 'edit'} )
           }, 
           handleConfirm : function(e) {              
-//***********            this.props.deleteHandler(this.props.event.date) ;//Handler uses the key / k
+//*****   this.props.deleteHandler(this.props.event.date) ;//Handler uses the key / k
             this.props.deleteHandler(this.props.event._id);   // _id provided from Mongo
           },    
           handleCancel : function() {
@@ -132,7 +132,7 @@ import buttons from './content/eventButtons';
                       <td key={'venue'}><input type="text" className="form-control"
                          value={this.state.venue}
                          onChange={this.handleVenueChange} /> </td>,
-                      <td key={'date'}><input type="text" className="form-control"
+                      <td key={'date'}><input type="date" className="form-control"
                          value={this.state.date}
                          onChange={this.handleDateChange} /> </td>,
                    ] ;
@@ -155,11 +155,12 @@ import buttons from './content/eventButtons';
             }
           });
 
+		  //was <Event key={event.date}  event={event} 
     var EventList = React.createClass({
           render: function(){
               var eventRows = this.props.events.map(function(event){
                   return (
-                   <Event key={event.date}  event={event} 
+                   <Event key={event._id}  event={event} 
                        deleteHandler={this.props.deleteHandler} 
                        updateHandler={this.props.updateHandler} />
                     ) ;
@@ -174,13 +175,13 @@ import buttons from './content/eventButtons';
             }
           });
 
-//TABLE FORMAT		  
-// ORIG: <table className="table table-bordered">	
+//TABLE FORMAT      
+// ORIG: <table className="table table-bordered"> 
 // ALT FORMATS:http://allenfang.github.io/react-bootstrap-table/example.html#basic  
     var EventsTable = React.createClass({
           render: function(){
               return (
-				<table className="table table-striped table-hover table-condensed">
+        <table className="table table-striped table-hover table-condensed">
                     <thead>
                       <tr>
                       <th>EVENT</th>
@@ -209,9 +210,7 @@ var EventApp = React.createClass({
     },
 
     componentDidMount: function(){
-      console.log("eventApp  didMount")
       api.getAll().then(resp => {
-        console.log("setState: " + resp.events)
           this.setState({
                 events: resp.events
          });
@@ -221,13 +220,13 @@ var EventApp = React.createClass({
 
     deleteEvent : function(k) {
       console.log("FAF delete event: " + k);  //date is the key
-       //api.delete(k);   //*********************************************************** method in api is deleteEvent
+       //api.delete(k);   //***** method in api is deleteEvent
        api.deleteEvent(k);
        this.setState( {} ) ;
     },
 
     addEvent : function(r,v,d) {
-      api.addEvent(r,v,d)    //********************* method name
+      api.addEvent(r,v,d)    //***** method name
       .then(resp => {         // handle promise
         const newEvent = {"id": resp.id, "round": resp.round, "venue": resp.venue, "date": resp.date};
         this.setState({events: this.state.events.concat([newEvent])});
@@ -239,7 +238,7 @@ var EventApp = React.createClass({
       console.log("round: " + r);
       console.log("venue: " + v);
       console.log("date: " + d);
-      //if (api.update(key,r,v,d) )  {   //*************************** method in api is updateEvent
+      //if (api.update(key,r,v,d) )  {   //***** method in api is updateEvent
       api.updateEvent(key,r,v,d)
         .then(resp => {
           const newEvent = {"id": resp.id, "round": resp.round, "venue": resp.venue, "date": resp.date};
@@ -253,8 +252,8 @@ var EventApp = React.createClass({
               return (    
                     <div>
                        <h1>Upcoming Archery Events</h1>
-					   <p>Country-wide competitions are listed here. </p>
-					   <p>Check regularly for new events and updates to any published events.</p>
+             <p>Country-wide competitions are listed here. </p>
+             <p>Check regularly for new events and updates to any published events.</p>
                        <EventsTable events={events} 
                           deleteHandler={this.deleteEvent}
                           addHandler={this.addEvent} 
@@ -263,5 +262,5 @@ var EventApp = React.createClass({
               );
           }
       });
-	  
+    
 export default EventApp;
